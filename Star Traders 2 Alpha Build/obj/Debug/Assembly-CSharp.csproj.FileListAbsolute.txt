@@ -1,2 +1,0 @@
-H:\Star Traders 2\Star Traders 2 Alpha Build\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
-H:\Star Traders 2\Star Traders 2 Alpha Build\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
