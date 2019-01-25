@@ -25,6 +25,9 @@ public class EnemyController : MonoBehaviour
 
     public int scoreValue = 100;
 
+    public GameObject[] powerUps;
+    public int dropSuccessRate = 15;
+
 
 	// Use this for initialization
 	void Start ()
@@ -64,6 +67,14 @@ public class EnemyController : MonoBehaviour
         if(currentHealth <= 0)
         {
             GameManager.instance.AddScore(scoreValue);
+
+            int randomChance = Random.Range(0, 100);
+             if(randomChance < dropSuccessRate)
+             {
+                int randomPick = Random.Range(0, powerUps.Length);
+                Instantiate(powerUps[randomPick], transform.position, transform.rotation);
+             }
+
             Destroy(gameObject);
             Instantiate(DeathEffect, transform.position, transform.rotation);
         }

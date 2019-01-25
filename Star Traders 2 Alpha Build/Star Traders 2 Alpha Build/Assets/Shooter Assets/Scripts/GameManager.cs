@@ -73,7 +73,9 @@ public class GameManager : MonoBehaviour
     public IEnumerator EndLevelCo()
     {
         UIManager.instance.levelEndScreen.SetActive(true);
-        yield return new WaitForSeconds(.5f);
+
+       
+            yield return new WaitForSeconds(.5f);
         
     }
 }

@@ -65,6 +65,7 @@
      <Compile Include="Assets\Shooter Assets\Scripts\MovingObject.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\playerShot.cs" />
+     <Compile Include="Assets\Shooter Assets\Scripts\PowerUp.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\UIManager.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\WaveManager.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
