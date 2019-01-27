@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
     public Transform bottomLeftLimit, topRightlimit;
 
     public Transform shotPoint;
+    public Transform shotPoint2;
     public GameObject shot;
 
     public float timeBetweenShots = 0.1f;
@@ -48,6 +49,8 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetButtonDown("Fire1"))
             {
                 Instantiate(shot, shotPoint.position, shotPoint.rotation);
+
+                Instantiate(shot, shotPoint2.position, shotPoint.rotation);
                 shotCounter = timeBetweenShots;
             }
 
@@ -57,6 +60,7 @@ public class PlayerController : MonoBehaviour {
                 if (shotCounter <= 0)
                 {
                     Instantiate(shot, shotPoint.position, shotPoint.rotation);
+                    Instantiate(shot, shotPoint2.position, shotPoint.rotation);
                     shotCounter = timeBetweenShots;
                 }
             }

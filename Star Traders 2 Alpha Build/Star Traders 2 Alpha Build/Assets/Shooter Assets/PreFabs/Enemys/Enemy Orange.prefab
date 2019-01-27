@@ -179,3 +179,4 @@ MonoBehaviour:
   powerUps:
   - {fileID: 6859713220532682370, guid: 8ee5a194e0771924eb3aba5a842ec22e, type: 3}
   - {fileID: 808815394158568310, guid: 42eae29b7ffb73a4482b6718dfe170cf, type: 3}
+  dropSuccessRate: 0

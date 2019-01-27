@@ -130,7 +130,7 @@ GameObject:
   m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -142,11 +142,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65213446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.16, y: 0, z: 0}
+  m_LocalPosition: {x: 0.16, y: -0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1470533634}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &83617028 stripped
 Transform:
@@ -183,7 +183,7 @@ Transform:
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 1}
   m_Children: []
   m_Father: {fileID: 1470533634}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &149202393
 SpriteRenderer:
@@ -1569,23 +1569,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - timeToSpawn: 2
-    theWave: {fileID: 8121835188166665823, guid: 77b3bfdbc30108b48ab24aeee621f5f2,
-      type: 3}
-  - timeToSpawn: 3
+  - timeToSpawn: 5
     theWave: {fileID: 8637248528965884852, guid: aedd533d94f4e674e9ad78c55db0bb01,
       type: 3}
+  - timeToSpawn: 3
+    theWave: {fileID: 961474478, guid: 7beb148e8fb82b94b8e25f44aa6d84c2, type: 3}
   - timeToSpawn: 0.5
-    theWave: {fileID: 8121835188166665823, guid: 77b3bfdbc30108b48ab24aeee621f5f2,
-      type: 3}
+    theWave: {fileID: 1125232923, guid: 899f275cfd9ec06419f2c898bb1b6f54, type: 3}
+  - timeToSpawn: 3
+    theWave: {fileID: 1085667725, guid: 1217783867eb2b24384ce3af71d6e8cf, type: 3}
   - timeToSpawn: 3
     theWave: {fileID: 3240241530446726795, guid: 777413531cf40894caeb84f20ea722d5,
       type: 3}
   - timeToSpawn: 3
+    theWave: {fileID: 1125232923, guid: 899f275cfd9ec06419f2c898bb1b6f54, type: 3}
+  - timeToSpawn: 3
+    theWave: {fileID: 1085667725, guid: 1217783867eb2b24384ce3af71d6e8cf, type: 3}
+  - timeToSpawn: 3
+    theWave: {fileID: 3240241530446726795, guid: 777413531cf40894caeb84f20ea722d5,
+      type: 3}
+  - timeToSpawn: 15
     theWave: {fileID: 4478927277064169497, guid: 069ba27fc06693f4ea5c1b025f92c94c,
       type: 3}
   currentwave: 0
-  timeToNextWave: 1
+  timeToNextWave: 5
   canSpawnWaves: 1
 --- !u!1 &739537216
 GameObject:
@@ -2122,7 +2129,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956138748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -3.36, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3301,7 +3308,7 @@ SpriteRenderer:
   m_SortingLayerID: -118885599
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3f345f9dcef844749863556e4003c173, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1fc32f1c47d91d34c9a9808fc3372723, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3321,8 +3328,9 @@ Transform:
   m_GameObject: {fileID: 1470533631}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.95, y: -0.57, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
+  - {fileID: 1558484987}
   - {fileID: 65213447}
   - {fileID: 149202392}
   m_Father: {fileID: 0}
@@ -3345,6 +3353,7 @@ MonoBehaviour:
   bottomLeftLimit: {fileID: 586034511}
   topRightlimit: {fileID: 1081600222}
   shotPoint: {fileID: 65213447}
+  shotPoint2: {fileID: 1558484987}
   shot: {fileID: 1555579557746052, guid: 12bcdfc2b6386a5459e0ee9f99785aaf, type: 3}
   timeBetweenShots: 0.3
   boostSpeed: 8
@@ -3363,9 +3372,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.017330987, y: 0}
   serializedVersion: 2
-  m_Radius: 0.19
+  m_Radius: 0.426851
 --- !u!114 &1470533637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3444,6 +3453,36 @@ Transform:
   - {fileID: 6755730}
   m_Father: {fileID: 0}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1558484986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1558484987}
+  m_Layer: 8
+  m_Name: FirePoint 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1558484987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558484986}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.16, y: 0.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1470533634}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1612103216
 GameObject:
