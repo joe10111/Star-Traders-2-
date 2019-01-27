@@ -1077,7 +1077,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586034510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.3999996, y: -2.9466665, z: 0}
+  m_LocalPosition: {x: -6, y: -2.9466665, z: 0}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 1}
   m_Children: []
   m_Father: {fileID: 1358993389}
@@ -1263,7 +1263,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 74d3f76da53825740a52a2b88a7293d8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0882a6b250d48c143afb45509ba25850, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1584,7 +1584,7 @@ MonoBehaviour:
   - timeToSpawn: 3
     theWave: {fileID: 1125232923, guid: 899f275cfd9ec06419f2c898bb1b6f54, type: 3}
   - timeToSpawn: 3
-    theWave: {fileID: 1085667725, guid: 1217783867eb2b24384ce3af71d6e8cf, type: 3}
+    theWave: {fileID: 961474478, guid: 7beb148e8fb82b94b8e25f44aa6d84c2, type: 3}
   - timeToSpawn: 3
     theWave: {fileID: 3240241530446726795, guid: 777413531cf40894caeb84f20ea722d5,
       type: 3}
@@ -2129,7 +2129,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956138748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.36, y: 0, z: -10}
+  m_LocalPosition: {x: -1, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
