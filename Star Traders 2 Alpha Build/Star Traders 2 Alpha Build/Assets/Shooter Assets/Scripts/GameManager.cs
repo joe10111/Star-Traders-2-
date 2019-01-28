@@ -20,13 +20,13 @@ public class GameManager : MonoBehaviour
 
      void Start()
     {
-        UIManager.instance.livesText.text = "x " + currentLives;
+        UIManager.instance.livesText.text = "X " + currentLives;
 
-        UIManager.instance.scoreText.text = "Score: " + currentScore;
+        UIManager.instance.scoreText.text = "SCORE: " + currentScore;
 
 
-        highScore = PlayerPrefs.GetInt("HighScore");
-        UIManager.instance.highScoreText.text = "HI-Score: " + highScore;
+        highScore = PlayerPrefs.GetInt("HighSCORE");
+        UIManager.instance.highScoreText.text = "HI-SCORE: " + highScore;
     }
 
      void Update()
@@ -60,13 +60,13 @@ public class GameManager : MonoBehaviour
     public void AddScore(int scoreToAdd)
     {
         currentScore += scoreToAdd;
-        UIManager.instance.scoreText.text = "Score: " + currentScore;
+        UIManager.instance.scoreText.text = "SCORE: " + currentScore;
 
         if(currentScore > highScore)
         {
             highScore = currentScore;
-            UIManager.instance.highScoreText.text = "HI-Score: " + highScore;
-            PlayerPrefs.SetInt("HighScore", highScore);
+            UIManager.instance.highScoreText.text = "HI-SCORE: " + highScore;
+            PlayerPrefs.SetInt("HighSCORE", highScore);
         }
     }
 
