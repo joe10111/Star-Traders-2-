@@ -23,10 +23,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1307
-  m_MinSize: {x: 913, y: 448}
-  m_MaxSize: {x: 22008, y: 10000}
+  m_MinSize: {x: 909, y: 448}
+  m_MaxSize: {x: 22004, y: 10000}
   vertical: 0
-  controlID: 7431
+  controlID: 8575
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 7414
+  controlID: 8558
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -256,8 +256,8 @@ MonoBehaviour:
     y: 609
     width: 1181
     height: 698
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 7}
@@ -438,11 +438,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Orginal Assets/Audio
+    - Assets/Orginal Assets/Art/Space Objects
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Orginal Assets/Audio
+  - Assets/Orginal Assets/Art/Space Objects
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\Star Traders 2\Star-Traders-2-\Star Traders 2 Alpha Build\Star
     Traders 2 Alpha Build
@@ -450,8 +450,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d00b0000
-    m_LastClickedID: 3024
+    m_SelectedIDs: 720c0000
+    m_LastClickedID: 3186
     m_ExpandedIDs: 00000000a40900003a0b0000ca0b0000fe0b0000c60c0000c80c0000160d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -505,9 +505,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 9e0e0000
-    m_LastClickedInstanceID: 3742
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 662600008e2600006c27000000000000ea0900008c380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
