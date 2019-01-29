@@ -64,14 +64,19 @@ public class PlayerController : MonoBehaviour {
                     shotCounter = timeBetweenShots;
                 }
             }
-        }
-        if(boostCounter > 0)
-        {
-            boostCounter -= Time.deltaTime;
-            if(boostCounter<= 0)
+
+            if (boostCounter > 0)
             {
-                moveSpeed = normalSpeed;
+                boostCounter -= Time.deltaTime;
+                if (boostCounter <= 0)
+                {
+                    moveSpeed = normalSpeed;
+                }
             }
+        }
+        else
+        {
+            theRB.velocity = Vector2.zero;
         }
     }
 

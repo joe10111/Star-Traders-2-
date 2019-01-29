@@ -134,10 +134,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1.5
-  startDirection: {x: -1, y: 0.2}
+  startDirection: {x: -1, y: 0.05}
   shouldChangeDirection: 1
   changeDirectionXpoint: 0
-  changedDirection: {x: -1.3, y: -0.2}
+  changedDirection: {x: -0.5, y: -0.2}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 1951503948}
   timeBetweenShot: 2
@@ -284,10 +284,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1.5
-  startDirection: {x: -1, y: -0.2}
+  startDirection: {x: -1, y: -0.05}
   shouldChangeDirection: 1
   changeDirectionXpoint: 0
-  changedDirection: {x: -0.75, y: 0.2}
+  changedDirection: {x: -0.5, y: 0.2}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 1804078749}
   timeBetweenShot: 2
@@ -324,7 +324,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125232922}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.09, y: -0.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

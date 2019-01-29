@@ -17,6 +17,12 @@ public class UIManager : MonoBehaviour
     public Text scoreText, highScoreText;
 
     public GameObject levelEndScreen;
+
+    public Text endLevelScore, endCurrentScore;
+
+    public GameObject highscoreNotice;
+
+
  
 
     private void Awake()
