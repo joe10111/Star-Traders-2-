@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
 
     public string nextLevel;
 
+    public string Level1 = "Level1";
+
     private void Awake()
     {
         instance = this;
@@ -29,9 +31,21 @@ public class GameManager : MonoBehaviour
 
      void Start()
     {
-        currentLives = PlayerPrefs.GetInt("CurrentLives");
-        UIManager.instance.livesText.text = "X " + currentLives;
-        
+       
+        Scene currentScence = SceneManager.GetActiveScene();
+        string scenceName = currentScence.name;
+        PlayerPrefs.SetInt("CurrentLives", 3);
+        if (scenceName == Level1)
+        {
+            Debug.Log(currentLives);
+         // PlayerPrefs.DeleteKey("CurrentLives", currentLives);
+            currentLives = 3;
+            PlayerPrefs.SetInt("CurrentLives", 3);
+            PlayerPrefs.SetInt("CurrentScore", 0);
+        }
+         currentLives = PlayerPrefs.GetInt("CurrentLives");
+         UIManager.instance.livesText.text = "X " + currentLives;
+       
 
 
         highScore = PlayerPrefs.GetInt("HighSCORE");
@@ -43,7 +57,14 @@ public class GameManager : MonoBehaviour
 
      void Update()
     {
-        if (levelEnding)
+
+        Scene currentScence = SceneManager.GetActiveScene();
+        string scenceName = currentScence.name;
+        if (scenceName == Level1)
+        {
+            print("I hate Mike");
+        }
+            if (levelEnding)
         {
             PlayerController.instance.transform.position += new Vector3(PlayerController.instance.boostSpeed * Time.deltaTime, 0f, 0f);
         }
@@ -63,6 +84,7 @@ public class GameManager : MonoBehaviour
             WaveManager.instance.canSpawnWaves = false;
 
             PlayerPrefs.SetInt("HighSCORE", highScore);
+            currentScore = 0;
         }
     }
 
