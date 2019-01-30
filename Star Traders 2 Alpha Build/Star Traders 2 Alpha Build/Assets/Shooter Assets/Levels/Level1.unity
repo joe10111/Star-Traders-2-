@@ -3984,6 +3984,7 @@ MonoBehaviour:
   levelEnding: 0
   waitForLevelEnd: 5
   nextLevel: Level 2
+  Level1: Level1
 --- !u!4 &1727613711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4099933265589362, guid: ae97ef7e60fa27e4a9c238b6ee2a619d,

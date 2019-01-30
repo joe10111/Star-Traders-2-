@@ -34,9 +34,9 @@ public class GameManager : MonoBehaviour
        
         Scene currentScence = SceneManager.GetActiveScene();
         string scenceName = currentScence.name;
-        PlayerPrefs.SetInt("CurrentLives", 3);
         if (scenceName == Level1)
         {
+            print("Level1 Loaded");
             Debug.Log(currentLives);
          // PlayerPrefs.DeleteKey("CurrentLives", currentLives);
             currentLives = 3;
@@ -61,9 +61,7 @@ public class GameManager : MonoBehaviour
         Scene currentScence = SceneManager.GetActiveScene();
         string scenceName = currentScence.name;
         if (scenceName == Level1)
-        {
-            print("I hate Mike");
-        }
+        
             if (levelEnding)
         {
             PlayerController.instance.transform.position += new Vector3(PlayerController.instance.boostSpeed * Time.deltaTime, 0f, 0f);
@@ -84,7 +82,7 @@ public class GameManager : MonoBehaviour
             WaveManager.instance.canSpawnWaves = false;
 
             PlayerPrefs.SetInt("HighSCORE", highScore);
-            currentScore = 0;
+        
         }
     }
 
