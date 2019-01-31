@@ -137,7 +137,7 @@ MonoBehaviour:
   startDirection: {x: -1, y: 0}
   shouldChangeDirection: 1
   changeDirectionXpoint: 0
-  changedDirection: {x: -0.75, y: 0}
+  changedDirection: {x: -0.25, y: 0}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 412376354}
   timeBetweenShot: 2

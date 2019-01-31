@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour {
     void Start ()
     {
         normalSpeed = moveSpeed;
+        theRB = GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
@@ -42,7 +43,13 @@ public class PlayerController : MonoBehaviour {
     {
         if (!stopMovement)
         {
-            theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
+            float Movex = Input.GetAxis("Horizontal");
+            
+            theRB.velocity = new Vector2(Movex* moveSpeed, theRB.velocity.y);
+
+            float Movey = Input.GetAxis("Vertical");
+
+            theRB.velocity = new Vector2(theRB.velocity.x, Movey * moveSpeed);
 
             transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.position.x, topRightlimit.position.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.position.y, topRightlimit.position.y), transform.position.z);
 
