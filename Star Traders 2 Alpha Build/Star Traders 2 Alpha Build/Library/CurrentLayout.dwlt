@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 474}
+  m_MinSize: {x: 950, y: 498}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 474}
+  m_MinSize: {x: 950, y: 498}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -113,10 +113,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 909, y: 424}
-  m_MaxSize: {x: 22004, y: 10000}
+  m_MinSize: {x: 907, y: 448}
+  m_MaxSize: {x: 22002, y: 10000}
   vertical: 0
-  controlID: 4944
+  controlID: 14199
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 0
     width: 708
     height: 731
-  m_MinSize: {x: 202, y: 424}
-  m_MaxSize: {x: 4002, y: 8024}
+  m_MinSize: {x: 202, y: 448}
+  m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 4945
+  controlID: 14200
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -385,9 +385,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -7.95, y: -0.57, z: 0}
+    m_Target: {x: 8.74, y: 4.8800006, z: 0}
     speed: 2
-    m_Value: {x: -7.95, y: -0.57, z: 0}
+    m_Value: {x: 8.74, y: 4.8800006, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -419,9 +419,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.26429
+    m_Target: 22
     speed: 2
-    m_Value: 2.26429
+    m_Value: 22
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 13944
+  m_LastSelectedObjectID: 17004
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -491,9 +491,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: bc540000
-      m_LastClickedID: 21692
-      m_ExpandedIDs: b8d0ffff34d1ffffeed1ffff60d3ffff3ce7ffff603600006e360000bc540000
+      m_SelectedIDs: d6410000
+      m_LastClickedID: 16854
+      m_ExpandedIDs: b69fffffd4fbffffee2a00002a2b0000782b0000b22b00000c2c00009c410000524200006c420000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -555,11 +555,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Orginal Assets/Levels
+    - Assets/Shooter Assets/PreFabs/Waves
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Orginal Assets/Levels
+  - Assets/Shooter Assets/PreFabs/Waves
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\cente\Documents\GitHub\Star-Traders-2-\Star Traders
     2 Alpha Build\Star Traders 2 Alpha Build
@@ -567,9 +567,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0c340000
-    m_LastClickedID: 13324
-    m_ExpandedIDs: 00000000ca3300009e340000fa340000163500008e35000090350000be35000000ca9a3b
+    m_SelectedIDs: ce270000
+    m_LastClickedID: 10190
+    m_ExpandedIDs: 000000004a260000f027000084280000b62800008a2900008c290000dc29000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -597,7 +597,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ca3300009e340000fa340000163500008e35000090350000be35000000ca9a3b
+    m_ExpandedIDs: 000000004a260000f027000084280000b62800008a2900008c290000dc29000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

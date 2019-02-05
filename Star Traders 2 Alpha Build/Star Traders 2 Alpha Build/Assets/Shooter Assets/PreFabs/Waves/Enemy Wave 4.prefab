@@ -140,7 +140,7 @@ MonoBehaviour:
   changedDirection: {x: -0.5, y: -0.2}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 1951503948}
-  timeBetweenShot: 2
+  timeBetweenShot: 4
   canShoot: 1
   currentHealth: 4
   DeathEffect: {fileID: 1229876416362346, guid: dbce13e23c60ef44a93b2cf87b964d02,
@@ -290,7 +290,7 @@ MonoBehaviour:
   changedDirection: {x: -0.5, y: 0.2}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 1804078749}
-  timeBetweenShot: 2
+  timeBetweenShot: 4
   canShoot: 1
   currentHealth: 4
   DeathEffect: {fileID: 1229876416362346, guid: dbce13e23c60ef44a93b2cf87b964d02,

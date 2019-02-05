@@ -53,24 +53,21 @@ public class PlayerController : MonoBehaviour {
 
             transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.position.x, topRightlimit.position.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.position.y, topRightlimit.position.y), transform.position.z);
 
-            if (Input.GetButtonDown("Fire1"))
+            shotCounter += Time.deltaTime;
+            print(shotCounter);
+            print(timeBetweenShots);
+
+            if (Input.GetButtonDown("Fire1") && shotCounter >= timeBetweenShots)
+               
             {
                 Instantiate(shot, shotPoint.position, shotPoint.rotation);
 
                 Instantiate(shot, shotPoint2.position, shotPoint.rotation);
-                shotCounter = timeBetweenShots;
+                shotCounter = 0f;
             }
 
-            if (Input.GetButton("Fire1"))
-            {
-                shotCounter -= Time.deltaTime;
-                if (shotCounter <= 0)
-                {
-                    Instantiate(shot, shotPoint.position, shotPoint.rotation);
-                    Instantiate(shot, shotPoint2.position, shotPoint.rotation);
-                    shotCounter = timeBetweenShots;
-                }
-            }
+
+           
 
             if (boostCounter > 0)
             {

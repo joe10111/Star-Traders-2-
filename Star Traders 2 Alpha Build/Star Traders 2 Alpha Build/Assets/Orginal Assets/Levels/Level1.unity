@@ -1330,7 +1330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586034510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -2.9466665, z: 0}
+  m_LocalPosition: {x: -6, y: -1.6, z: 0}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 1}
   m_Children: []
   m_Father: {fileID: 1358993389}
@@ -2867,7 +2867,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081600221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.36, y: 3.6333337, z: 0}
+  m_LocalPosition: {x: 6.36, y: 2.5, z: 0}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 1}
   m_Children: []
   m_Father: {fileID: 1358993389}
@@ -3798,7 +3798,7 @@ MonoBehaviour:
   shotPoint: {fileID: 65213447}
   shotPoint2: {fileID: 1558484987}
   shot: {fileID: 1555579557746052, guid: 12bcdfc2b6386a5459e0ee9f99785aaf, type: 3}
-  timeBetweenShots: 0.3
+  timeBetweenShots: 0.6
   boostSpeed: 8
   boostLength: 3
   stopMovement: 0

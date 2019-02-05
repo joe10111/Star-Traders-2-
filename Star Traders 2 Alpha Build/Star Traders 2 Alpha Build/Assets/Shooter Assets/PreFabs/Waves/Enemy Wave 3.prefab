@@ -140,9 +140,9 @@ MonoBehaviour:
   changedDirection: {x: -0.5, y: -0.1}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 1578844413}
-  timeBetweenShot: 1
+  timeBetweenShot: 5
   canShoot: 1
-  currentHealth: 3
+  currentHealth: 2
   DeathEffect: {fileID: 1229876416362346, guid: dbce13e23c60ef44a93b2cf87b964d02,
     type: 3}
   scoreValue: 100
@@ -395,9 +395,9 @@ MonoBehaviour:
   changedDirection: {x: -0.5, y: 0.1}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 1517107690}
-  timeBetweenShot: 1
+  timeBetweenShot: 5
   canShoot: 1
-  currentHealth: 3
+  currentHealth: 2
   DeathEffect: {fileID: 1229876416362346, guid: dbce13e23c60ef44a93b2cf87b964d02,
     type: 3}
   scoreValue: 100
