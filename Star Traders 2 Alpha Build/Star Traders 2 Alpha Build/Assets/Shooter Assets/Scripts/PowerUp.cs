@@ -26,11 +26,11 @@ public class PowerUp : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if(isShield)
+        if(isShield && other.tag == "Player")
         {
             Health.instance.ActivateShield();
         }
-        if(isBoost)
+        if(isBoost && other.tag == "Player")
         {
             PlayerController.instance.ActivateSpeedBoost();
         }

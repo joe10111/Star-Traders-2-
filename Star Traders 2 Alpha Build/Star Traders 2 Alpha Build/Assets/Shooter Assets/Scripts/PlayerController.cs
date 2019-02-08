@@ -18,15 +18,19 @@ public class PlayerController : MonoBehaviour {
     public float timeBetweenShots = 0.1f;
 
     private float shotCounter;
+   
     private float normalSpeed;
     public float boostSpeed;
     public float boostLength;
     private float boostCounter;
 
     public bool stopMovement;
-    
-    
-   private void Awake()
+
+    public bool dashReady = false;
+    private float dashCounter;
+    public float dashTime = 3;
+
+    private void Awake()
     {
         instance = this;
     }
@@ -41,10 +45,14 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+      
+
         if (!stopMovement)
         {
+           
+           
+
             float Movex = Input.GetAxis("Horizontal");
-            
             theRB.velocity = new Vector2(Movex* moveSpeed, theRB.velocity.y);
 
             float Movey = Input.GetAxis("Vertical");
@@ -54,14 +62,29 @@ public class PlayerController : MonoBehaviour {
             transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.position.x, topRightlimit.position.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.position.y, topRightlimit.position.y), transform.position.z);
 
             shotCounter += Time.deltaTime;
-            print(shotCounter);
-            print(timeBetweenShots);
+
+            dashCounter += Time.deltaTime;
+
+            if (dashCounter >= dashTime)
+            {
+                dashReady = true;
+                print("dash ready");
+            }
+
+            if (Input.GetKeyDown(KeyCode.A) && dashReady == true)
+            {
+                theRB.AddForce(transform.up * 10);
+                print("A pressed");
+                dashReady = false;
+                dashCounter = 0;
+            }
+            //print(shotCounter);
+            //print(timeBetweenShots);
 
             if (Input.GetButtonDown("Fire1") && shotCounter >= timeBetweenShots)
                
             {
                 Instantiate(shot, shotPoint.position, shotPoint.rotation);
-
                 Instantiate(shot, shotPoint2.position, shotPoint.rotation);
                 shotCounter = 0f;
             }

@@ -3713,7 +3713,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 1
 --- !u!212 &1470533633
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3802,6 +3802,8 @@ MonoBehaviour:
   boostSpeed: 8
   boostLength: 3
   stopMovement: 0
+  dashReady: 0
+  dashTime: 3
 --- !u!58 &1470533636
 CircleCollider2D:
   m_ObjectHideFlags: 0
