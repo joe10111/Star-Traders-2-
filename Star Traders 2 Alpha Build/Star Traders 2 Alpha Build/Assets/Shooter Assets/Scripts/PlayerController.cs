@@ -26,10 +26,15 @@ public class PlayerController : MonoBehaviour {
 
     public bool stopMovement;
 
-    public bool dashReady = false;
-    private float dashCounter;
-    public float dashTime = 3;
+    public GameObject eShot;
 
+   // public bool dashReady = false;
+   // private float dashCounter;
+   // public float dashTime = 3;
+
+    //public float dashDistances;
+
+    public LayerMask bullet;
     private void Awake()
     {
         instance = this;
@@ -49,9 +54,6 @@ public class PlayerController : MonoBehaviour {
 
         if (!stopMovement)
         {
-           
-           
-
             float Movex = Input.GetAxis("Horizontal");
             theRB.velocity = new Vector2(Movex* moveSpeed, theRB.velocity.y);
 
@@ -63,21 +65,22 @@ public class PlayerController : MonoBehaviour {
 
             shotCounter += Time.deltaTime;
 
-            dashCounter += Time.deltaTime;
+           // dashCounter += Time.deltaTime;
 
-            if (dashCounter >= dashTime)
-            {
-                dashReady = true;
-                print("dash ready");
-            }
+          //  if (dashCounter >= dashTime)
+            //{
+             //   dashReady = true;
+             //   print("dash ready");
+           // }
 
-            if (Input.GetKeyDown(KeyCode.A) && dashReady == true)
-            {
-                theRB.AddForce(transform.up * 10);
-                print("A pressed");
-                dashReady = false;
-                dashCounter = 0;
-            }
+          //  if (Input.GetKeyDown(KeyCode.Q ) && dashReady == true)
+          //  {
+             //   transform.position += ( new Vector3( 0,dashDistances,0) * Time.deltaTime);
+               // print("Dashed");
+               // dashReady = false;
+              //  dashCounter = 0;
+           // }
+           
             //print(shotCounter);
             //print(timeBetweenShots);
 
@@ -88,9 +91,19 @@ public class PlayerController : MonoBehaviour {
                 Instantiate(shot, shotPoint2.position, shotPoint.rotation);
                 shotCounter = 0f;
             }
-
-
-           
+            if (Input.GetKeyDown(KeyCode.Q))
+                {
+                Collider2D bulletBlank = Physics2D.OverlapCircle(transform.position, 1, bullet);
+                if(bulletBlank == null)
+                     {
+                    print("No bullets");
+                     }
+                 else
+                    {
+                    DestroyImmediate(eShot, true);
+                     }
+                }
+            
 
             if (boostCounter > 0)
             {

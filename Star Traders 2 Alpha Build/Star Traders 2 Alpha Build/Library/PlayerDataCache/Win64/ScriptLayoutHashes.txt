@@ -1,9 +1,10 @@
 Win64
 PlayerPath?
-C:/Users/cente/Desktop/Star Traders 2 Alpha Build.exe
+C:/Users/cente/Desktop/st2 build/Star Traders 2 Alpha Build.exe
 SceneListBegin?
 Assets/Orginal Assets/Levels/Level1.unity
-Assets/Orginal Assets/Levels/Level 2.unity
+Assets/Orginal Assets/Levels/Level2.unity
+Assets/Orginal Assets/Levels/Level3.unity
 SceneListEnd?
 c6247401f1b35aca1ddd7fc91da120ba Assembly-CSharp.dll:.GameManager
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -128,7 +129,7 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 3a3b779b184dd221818c22e8bacdbe3f Assembly-CSharp.dll:.PowerUp
-a92a5ec3aa600a4739c19abcb9ecdfb2 Assembly-CSharp.dll:.PlayerController
+c94f8f58e002eec588dbb9553d4290a0 Assembly-CSharp.dll:.PlayerController
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.LevelEnd
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator

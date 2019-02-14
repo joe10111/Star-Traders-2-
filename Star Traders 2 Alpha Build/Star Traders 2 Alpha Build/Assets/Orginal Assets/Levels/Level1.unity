@@ -1330,7 +1330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586034510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -1.6, z: 0}
+  m_LocalPosition: {x: -5.82, y: -1.6, z: 0}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 1}
   m_Children: []
   m_Father: {fileID: 1358993389}
@@ -2867,7 +2867,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081600221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.36, y: 2.5, z: 0}
+  m_LocalPosition: {x: -1.7, y: 2.5, z: 0}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 1}
   m_Children: []
   m_Father: {fileID: 1358993389}
@@ -3713,7 +3713,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 1
+  m_Constraints: 0
 --- !u!212 &1470533633
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3791,7 +3791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd697787585ff245a0189d93360dc3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 7
   theRB: {fileID: 1470533632}
   bottomLeftLimit: {fileID: 586034511}
   topRightlimit: {fileID: 1081600222}
@@ -3802,8 +3802,10 @@ MonoBehaviour:
   boostSpeed: 8
   boostLength: 3
   stopMovement: 0
-  dashReady: 0
-  dashTime: 3
+  eShot: {fileID: 0}
+  bullet:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!58 &1470533636
 CircleCollider2D:
   m_ObjectHideFlags: 0
