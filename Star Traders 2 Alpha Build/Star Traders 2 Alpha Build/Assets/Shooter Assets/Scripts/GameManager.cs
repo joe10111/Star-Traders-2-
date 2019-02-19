@@ -60,11 +60,11 @@ public class GameManager : MonoBehaviour
 
         Scene currentScence = SceneManager.GetActiveScene();
         string scenceName = currentScence.name;
-        if (scenceName == Level1)
+       
         
             if (levelEnding)
         {
-            PlayerController.instance.transform.position += new Vector3(PlayerController.instance.boostSpeed * Time.deltaTime, 0f, 0f);
+            PlayerController.instance.transform.position += new Vector3(0f, PlayerController.instance.boostSpeed * Time.deltaTime, 0f);
         }
     }
     public void KillPlayer()

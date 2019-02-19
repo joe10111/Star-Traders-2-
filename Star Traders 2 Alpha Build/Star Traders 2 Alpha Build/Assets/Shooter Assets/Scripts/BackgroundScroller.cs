@@ -25,20 +25,20 @@ public class BackgroundScroller : MonoBehaviour
        //Moving the back ground
        //Accesing its vector(The backgrounds x position, minusing the scrollSpeed set above, multipling by the games frames per second) 
        //Than setting the y, and z position
-       BG1.position = new Vector3(BG1.position.x - (scrollSpeed * Time.deltaTime), BG1.position.y, BG2.position.z);
+       BG1.position = new Vector3(BG1.position.x , BG1.position.y - (scrollSpeed * Time.deltaTime), BG2.position.z);
         
        //Setting background 2 to do the same but simplfied
-       BG2.position -= new Vector3(scrollSpeed * Time.deltaTime, 0f, 0f);
+       BG2.position -= new Vector3(0f, scrollSpeed * Time.deltaTime, 0f);
 
        //Jumping the background to its orginal position so that it looks like its looping
-       if (BG1.position.x < -bgWidth - 1)
+       if (BG1.position.y < -bgWidth -2)
         {
-            BG1.position += new Vector3(bgWidth * 2f, 0f, 0f);
+            BG1.position += new Vector3(0f, bgWidth + 30, 0f);
         }
        //Jumping the background 2 to its orginal position so that it looks like its looping
-       if (BG2.position.x < -bgWidth - 1)
+       if (BG2.position.y < -bgWidth -2)
        {
-           BG2.position += new Vector3(bgWidth * 2f, 0f, 0f);
-       }
+            BG2.position += new Vector3(0f, bgWidth + 30, 0f);
+        }
     }
 }

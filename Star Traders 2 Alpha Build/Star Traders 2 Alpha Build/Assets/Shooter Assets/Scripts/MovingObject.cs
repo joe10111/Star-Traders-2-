@@ -10,7 +10,7 @@ public class MovingObject : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        transform.position -= new Vector3(moveSpeed * Time.deltaTime, 0f, 0f);
+        transform.position -= new Vector3( 0f, moveSpeed * Time.deltaTime, 0f);
 	}
 
     private void OnBecameInvisible()
