@@ -12,7 +12,7 @@ public class EnemyController : MonoBehaviour
     public bool shouldChangeDirection;
     public float changeDirectionXpoint, changeDirectionXpoint2;
     public Vector2 changedDirection, changedDirection2;
-
+  
     public GameObject shotToFire;
     public Transform firePoint;
     public float timeBetweenShot;
@@ -29,7 +29,7 @@ public class EnemyController : MonoBehaviour
     public GameObject[] powerUps;
     public int dropSuccessRate = 15;
 
-    public float deathShake = 0.01f;
+    
 
     public bool changedDir2 = true;
     public bool changedDir3 = true;
@@ -64,6 +64,7 @@ public class EnemyController : MonoBehaviour
             {
                 changedDir2 = false;
                 transform.position += new Vector3(changedDirection2.x * moveSpeed * Time.deltaTime, changedDirection2.y * moveSpeed * Time.deltaTime, 0f);
+              
             }
            
         }
@@ -90,7 +91,8 @@ public class EnemyController : MonoBehaviour
                 int randomPick = Random.Range(0, powerUps.Length);
                 Instantiate(powerUps[randomPick], transform.position, transform.rotation);
              }
-            CameraShake.instance.shakeDuration = deathShake;
+            CameraShake.instance.shakeAmount = .07f;
+            CameraShake.instance.shakeDuration = 0.09f;
             Destroy(gameObject);
             Instantiate(DeathEffect, transform.position, transform.rotation);
         }
