@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Orginal Assets/Levels/Main Menu.unity
+    guid: 5a8ef622c65a23640ab6c87a2a6e8b31
+  - enabled: 1
     path: Assets/Orginal Assets/Levels/Level1.unity
     guid: f4d66a0f4f34058479e16c987919e67e
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/01578dce44d11344dbb30c439e87805c
-    guid: 01578dce44d11344dbb30c439e87805c
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
