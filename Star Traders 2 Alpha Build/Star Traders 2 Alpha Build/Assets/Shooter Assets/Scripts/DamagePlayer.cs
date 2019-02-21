@@ -18,6 +18,7 @@ public class DamagePlayer : MonoBehaviour {
     {
         if(gameObject.tag == "Player")
         {
+            CameraShake.instance.shakeDuration = .5f;
             Health.instance.DamageToPlayer();
         }
     }

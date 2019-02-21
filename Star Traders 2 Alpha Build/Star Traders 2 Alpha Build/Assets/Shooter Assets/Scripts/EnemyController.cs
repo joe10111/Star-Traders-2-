@@ -7,10 +7,11 @@ public class EnemyController : MonoBehaviour
     public float moveSpeed;
 
     public Vector2 startDirection;
+    
 
     public bool shouldChangeDirection;
-    public float changeDirectionXpoint;
-    public Vector2 changedDirection;
+    public float changeDirectionXpoint, changeDirectionXpoint2;
+    public Vector2 changedDirection, changedDirection2;
 
     public GameObject shotToFire;
     public Transform firePoint;
@@ -28,9 +29,13 @@ public class EnemyController : MonoBehaviour
     public GameObject[] powerUps;
     public int dropSuccessRate = 15;
 
+    public float deathShake = 0.01f;
 
-	// Use this for initialization
-	void Start ()
+    public bool changedDir2 = true;
+    public bool changedDir3 = true;
+
+    // Use this for initialization
+    void Start ()
     {
         shotCounter = timeBetweenShot;	
 	}
@@ -43,13 +48,24 @@ public class EnemyController : MonoBehaviour
             transform.position += new Vector3(startDirection.x * moveSpeed * Time.deltaTime, startDirection.y * moveSpeed * Time.deltaTime, 0f);
         } else
         {
-            if(transform.position.x > changeDirectionXpoint)
+            if (transform.position.y > changeDirectionXpoint && changedDir2 == true)
             {
                 transform.position += new Vector3(startDirection.x * moveSpeed * Time.deltaTime, startDirection.y * moveSpeed * Time.deltaTime, 0f);
-            }else
+            } else
             {
                 transform.position += new Vector3(changedDirection.x * moveSpeed * Time.deltaTime, changedDirection.y * moveSpeed * Time.deltaTime, 0f);
             }
+            if (transform.position.y > changeDirectionXpoint2)
+            {
+                changedDir2 = false;
+                transform.position += new Vector3(startDirection.x * moveSpeed * Time.deltaTime, startDirection.y * moveSpeed * Time.deltaTime, 0f);
+            }
+            else
+            {
+                changedDir2 = false;
+                transform.position += new Vector3(changedDirection2.x * moveSpeed * Time.deltaTime, changedDirection2.y * moveSpeed * Time.deltaTime, 0f);
+            }
+           
         }
         if (allowShoot)
         {
@@ -74,7 +90,7 @@ public class EnemyController : MonoBehaviour
                 int randomPick = Random.Range(0, powerUps.Length);
                 Instantiate(powerUps[randomPick], transform.position, transform.rotation);
              }
-
+            CameraShake.instance.shakeDuration = deathShake;
             Destroy(gameObject);
             Instantiate(DeathEffect, transform.position, transform.rotation);
         }

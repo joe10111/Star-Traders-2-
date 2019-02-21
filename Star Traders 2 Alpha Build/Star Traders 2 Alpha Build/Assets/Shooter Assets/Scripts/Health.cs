@@ -52,6 +52,7 @@ public class Health : MonoBehaviour
 
     public void DamageToPlayer()
     {
+        CameraShake.instance.shakeDuration = .5f;
         if (invincCounter <= 0)
         {
             if (theShield.activeInHierarchy)

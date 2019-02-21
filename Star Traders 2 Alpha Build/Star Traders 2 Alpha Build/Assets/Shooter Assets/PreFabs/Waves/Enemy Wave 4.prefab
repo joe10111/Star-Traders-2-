@@ -133,16 +133,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6af6f44c31020e1469fb843e208a5a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1.5
+  moveSpeed: 1
   startDirection: {x: 0, y: -1}
   shouldChangeDirection: 1
   changeDirectionXpoint: 0
-  changedDirection: {x: 0, y: -1}
+  changedDirection: {x: 0, y: 0.5}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 1951503948}
-  timeBetweenShot: 4
+  timeBetweenShot: 2
   canShoot: 1
-  currentHealth: 4
+  currentHealth: 3
   DeathEffect: {fileID: 1229876416362346, guid: dbce13e23c60ef44a93b2cf87b964d02,
     type: 3}
   scoreValue: 100
@@ -283,16 +283,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6af6f44c31020e1469fb843e208a5a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1.5
+  moveSpeed: 1
   startDirection: {x: 0, y: -1}
   shouldChangeDirection: 1
   changeDirectionXpoint: 0
-  changedDirection: {x: 0, y: -1}
+  changedDirection: {x: 0, y: 0.5}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 1804078749}
-  timeBetweenShot: 4
+  timeBetweenShot: 2
   canShoot: 1
-  currentHealth: 4
+  currentHealth: 3
   DeathEffect: {fileID: 1229876416362346, guid: dbce13e23c60ef44a93b2cf87b964d02,
     type: 3}
   scoreValue: 100

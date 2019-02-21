@@ -106,11 +106,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 343842113, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}
       propertyPath: startDirection.y
-      value: -1
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 343842113, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}
       propertyPath: changedDirection.x
-      value: 0
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 343842113, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}
       propertyPath: changedDirection.y
@@ -123,6 +123,14 @@ PrefabInstance:
     - target: {fileID: 343842113, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}
       propertyPath: timeBetweenShot
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 343842113, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}
+      propertyPath: moveSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 343842113, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}
+      propertyPath: currentHealth
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}
@@ -199,11 +207,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 343842113, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}
       propertyPath: startDirection.y
-      value: -1
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 343842113, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}
       propertyPath: changedDirection.x
-      value: 0
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 343842113, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}
       propertyPath: changedDirection.y
@@ -216,6 +224,14 @@ PrefabInstance:
     - target: {fileID: 343842113, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}
       propertyPath: timeBetweenShot
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 343842113, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}
+      propertyPath: moveSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 343842113, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}
+      propertyPath: currentHealth
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd6a53c1a0c526d4981696e4eff72b17, type: 3}

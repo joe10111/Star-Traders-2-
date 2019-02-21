@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour {
     //Vars for Moving Player
     public float moveSpeed;
     public Rigidbody2D theRB;
+    public Animator animator;
 
     //Vars for Bondireis of player
     public Transform bottomLeftLimit, topRightlimit;
@@ -57,8 +58,10 @@ public class PlayerController : MonoBehaviour {
             float Movex = Input.GetAxis("Horizontal");
             theRB.velocity = new Vector2(Movex* moveSpeed, theRB.velocity.y);
 
-            float Movey = Input.GetAxis("Vertical");
+         
 
+            float Movey = Input.GetAxis("Vertical");
+            animator.SetFloat("flying", Mathf.Abs(Movey));
             theRB.velocity = new Vector2(theRB.velocity.x, Movey * moveSpeed);
 
             transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.position.x, topRightlimit.position.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.position.y, topRightlimit.position.y), transform.position.z);
