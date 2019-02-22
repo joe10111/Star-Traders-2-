@@ -34,7 +34,12 @@ public class GameManager : MonoBehaviour
        
         Scene currentScence = SceneManager.GetActiveScene();
         string scenceName = currentScence.name;
-        if (scenceName == Level1)
+        if (scenceName == "Main Menu")
+        {
+            highScore = PlayerPrefs.GetInt("HighSCORE");
+            UIManager.instance.highScoreText.text = "HI-SCORE: " + highScore;
+        }
+            if (scenceName == Level1)
         {
             print("Level1 Loaded");
             Debug.Log(currentLives);

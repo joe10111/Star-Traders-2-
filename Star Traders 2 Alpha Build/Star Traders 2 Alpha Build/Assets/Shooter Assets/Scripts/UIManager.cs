@@ -52,7 +52,7 @@ public class UIManager : MonoBehaviour
     public void QuitToMain()
     {
 
-        //will do later
+        SceneManager.LoadScene("Title Screen", LoadSceneMode.Single);
 
     }
 }
