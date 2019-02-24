@@ -100,4 +100,13 @@ public class Health : MonoBehaviour
 
         UIManager.instance.shieldBar.value = shieldPwr;
     }
+    public IEnumerator HealthUp()
+    {
+        maxHealth += 1;
+        PlayerPrefs.SetInt("HealthUp", maxHealth);
+        print(maxHealth);
+        yield return new WaitForSeconds(2);
+        Application.LoadLevel(Application.loadedLevel + 1);
+
+    }
 }

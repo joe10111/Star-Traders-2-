@@ -4,21 +4,39 @@ using UnityEngine;
 
 public class playerShot : MonoBehaviour
 {
-    public float shotSpeed = 7f;
+    public float shotSpeed;
     public GameObject impactEffect;
     public GameObject objectExplostion;
+    public static playerShot instance;
 
-	// Use this for initialization
-	void Start () {
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
+        
         transform.position += new Vector3(0f, shotSpeed * Time.deltaTime, 0f);
 	}
 
+    public IEnumerator UpBulletSpeed()
+    {
+        ///Dose not Work/////
+        shotSpeed += 1;
+        PlayerPrefs.SetFloat("UpBulletSpeed", shotSpeed);
+        print(shotSpeed);
+        yield return new WaitForSeconds(2);
+        Application.LoadLevel(Application.loadedLevel + 1);
+        ///Dose not Work/////
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         Instantiate(impactEffect, transform.position, transform.rotation);
@@ -40,4 +58,5 @@ public class playerShot : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    
 }

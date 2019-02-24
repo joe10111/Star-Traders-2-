@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
     }
-
+    
      void Start()
     {
        
@@ -47,9 +47,28 @@ public class GameManager : MonoBehaviour
             currentLives = 3;
             PlayerPrefs.SetInt("CurrentLives", 3);
             PlayerPrefs.SetInt("CurrentScore", 0);
+            PlayerPrefs.SetFloat("UpFireRate", .6f);
+            PlayerPrefs.SetFloat("SpeedUp", 7);
+            PlayerPrefs.SetInt("HealthUp", 3);
         }
-         currentLives = PlayerPrefs.GetInt("CurrentLives");
+
+            //upgrades
+        //FireRate
+        PlayerController.instance.timeBetweenShots = PlayerPrefs.GetFloat("UpFireRate");
+        //Health
+        Health.instance.maxHealth = PlayerPrefs.GetInt("HealthUp");
+        Health.instance.currentHealth = Health.instance.maxHealth;
+        UIManager.instance.healthBar.maxValue = Health.instance.maxHealth;
+        UIManager.instance.healthBar.value = Health.instance.currentHealth;
+        print(Health.instance.maxHealth);
+        //Speed
+        PlayerController.instance.moveSpeed = PlayerPrefs.GetFloat("SpeedUp");
+    
+            //upgrades
+
+        currentLives = PlayerPrefs.GetInt("CurrentLives");
          UIManager.instance.livesText.text = "X " + currentLives;
+       
        
 
 
@@ -62,6 +81,10 @@ public class GameManager : MonoBehaviour
 
      void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Application.LoadLevel(Application.loadedLevel + 1);
+        }
 
         Scene currentScence = SceneManager.GetActiveScene();
         string scenceName = currentScence.name;
@@ -143,4 +166,5 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(nextLevel);
 
     }
+    
 }

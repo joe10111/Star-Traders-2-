@@ -73,6 +73,7 @@
      <Compile Include="Assets\Shooter Assets\Scripts\titlescreen.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\TitleScreenUI.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\UIManager.cs" />
+     <Compile Include="Assets\Shooter Assets\Scripts\Upgrades.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\WaveManager.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>F:/Star Traders 2/Star-Traders-2-/Star Traders 2 Alpha Build/Star Traders 2 Alpha Build/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

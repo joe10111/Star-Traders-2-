@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour {
     public Rigidbody2D theRB;
     public Animator animator;
 
+    private IEnumerator coroutine;
+
+
     //Vars for Bondireis of player
     public Transform bottomLeftLimit, topRightlimit;
 
@@ -123,9 +126,27 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    public void ActivateSpeedBoost()
-    {
+    
+        public void ActivateSpeedBoost()
+         {
         boostCounter = boostLength;
         moveSpeed = boostSpeed;
+         }
+    public IEnumerator UpFireRate()
+    {
+        timeBetweenShots -= .1f;
+        PlayerPrefs.SetFloat("UpFireRate", timeBetweenShots);
+        print("upgraded fire");
+        yield return new WaitForSeconds(2);
+         Application.LoadLevel(Application.loadedLevel + 1);
     }
+    public IEnumerator SpeedUp()
+    {
+        moveSpeed += 1;
+        PlayerPrefs.SetFloat("SpeedUp", moveSpeed);
+        print(moveSpeed);
+        yield return new WaitForSeconds(2);
+        Application.LoadLevel(Application.loadedLevel + 1);
+    }
+
 }
