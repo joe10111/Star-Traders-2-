@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\DontDestroyOnLoad.cs" />
+     <Compile Include="Assets\InGameVolumeSlider.cs" />
      <Compile Include="Assets\Options.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\BackgroundScroller.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\CameraShake.cs" />
@@ -75,6 +76,7 @@
      <Compile Include="Assets\Shooter Assets\Scripts\UIManager.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\Upgrades.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\WaveManager.cs" />
+     <Compile Include="Assets\VolumeSlider.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>F:/Star Traders 2/Star-Traders-2-/Star Traders 2 Alpha Build/Star Traders 2 Alpha Build/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

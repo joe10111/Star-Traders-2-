@@ -20,4 +20,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Orginal Assets/Levels/Level2.unity
     guid: 8da6367f2744eda4bb933d988e7f9022
+  - enabled: 1
+    path: Assets/Orginal Assets/Levels/Upgrade 1.unity
+    guid: c1c6458d75dbe174082cb1cb7c428f9a
+  - enabled: 1
+    path: Assets/Orginal Assets/Levels/Level3.unity
+    guid: 8e8af1639d32d7d4895807246e31135a
+  - enabled: 1
+    path: Assets/Orginal Assets/Levels/Upgrade 2.unity
+    guid: 1e847fbd4d70f494d8886a7471898a2a
+  - enabled: 1
+    path: Assets/Orginal Assets/Levels/Level4.unity
+    guid: 9eb1e30e29728cb4d95672eeed279536
+  - enabled: 1
+    path: Assets/Orginal Assets/Levels/Upgrade 3.unity
+    guid: e1d467fba50f1af47bd552aad51093ce
+  - enabled: 1
+    path: Assets/Orginal Assets/Levels/Level5.unity
+    guid: 5c255fd2787ef5443858663e050644bb
+  - enabled: 1
+    path: Assets/Orginal Assets/Levels/Upgrade 4.unity
+    guid: 149cf3a935c84204f921a728fe1cb7f1
   m_configObjects: {}

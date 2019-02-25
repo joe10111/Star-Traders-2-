@@ -1778,7 +1778,6 @@ GameObject:
   - component: {fileID: 1760007454}
   - component: {fileID: 1760007453}
   - component: {fileID: 1760007452}
-  - component: {fileID: 1760007451}
   m_Layer: 5
   m_Name: Speed Up
   m_TagString: Untagged
@@ -1806,21 +1805,6 @@ RectTransform:
   m_AnchoredPosition: {x: -3.0999756, y: -285}
   m_SizeDelta: {x: 500, y: 61.28}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1760007451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760007449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0f74cd6c9955834b8998c430c8c711f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FireRateUpText: {fileID: 0}
-  HealthUpText: {fileID: 0}
-  SpeedUpText: {fileID: 0}
 --- !u!114 &1760007452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1977,9 +1961,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0f74cd6c9955834b8998c430c8c711f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireRateUpText: {fileID: 1264406150}
-  HealthUpText: {fileID: 24074446}
-  SpeedUpText: {fileID: 251558018}
+  FireRateUpText: {fileID: 1520249816}
+  HealthUpText: {fileID: 1877564760}
+  SpeedUpText: {fileID: 1760007449}
 --- !u!1 &1877564760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,7 +1976,6 @@ GameObject:
   - component: {fileID: 1877564765}
   - component: {fileID: 1877564764}
   - component: {fileID: 1877564763}
-  - component: {fileID: 1877564762}
   m_Layer: 5
   m_Name: Health Up
   m_TagString: Untagged
@@ -2020,21 +2003,6 @@ RectTransform:
   m_AnchoredPosition: {x: -3.0999756, y: -29}
   m_SizeDelta: {x: 500, y: 61.28}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1877564762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877564760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0f74cd6c9955834b8998c430c8c711f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FireRateUpText: {fileID: 0}
-  HealthUpText: {fileID: 0}
-  SpeedUpText: {fileID: 0}
 --- !u!114 &1877564763
 MonoBehaviour:
   m_ObjectHideFlags: 0

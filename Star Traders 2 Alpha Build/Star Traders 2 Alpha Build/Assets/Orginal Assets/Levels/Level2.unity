@@ -4130,7 +4130,7 @@ MonoBehaviour:
   currentScore: 0
   levelEnding: 0
   waitForLevelEnd: 5
-  nextLevel: Level1
+  nextLevel: Upgrade 1
   Level1: Level1
 --- !u!4 &1727613711 stripped
 Transform:
