@@ -119,7 +119,10 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Application.LoadLevel(Application.loadedLevel + 1);
+            PlayerPrefs.SetInt("score", currentScore);
+
+            SceneManager.LoadScene("HighScores");
+           
         }
 
         Scene currentScence = SceneManager.GetActiveScene();
@@ -146,7 +149,8 @@ public class GameManager : MonoBehaviour
             WaveManager.instance.canSpawnWaves = false;
 
             PlayerPrefs.SetInt("HighSCORE", highScore);
-        
+
+            PlayerPrefs.SetInt("score", currentScore);
         }
     }
 
