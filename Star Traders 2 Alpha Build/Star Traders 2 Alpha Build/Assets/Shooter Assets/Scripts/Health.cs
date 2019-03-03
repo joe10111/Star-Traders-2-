@@ -19,6 +19,7 @@ public class Health : MonoBehaviour
     public int shieldPwr;
     public int shieldMaxPwr = 2;
     public GameObject theShield;
+   
 
     private void Awake()
     {
@@ -76,6 +77,7 @@ public class Health : MonoBehaviour
                     Instantiate(deathEffect, transform.position, transform.rotation);
                     gameObject.SetActive(false);
 
+                    EnemyController.instance.canShoot = (false);
                     GameManager.instance.KillPlayer();
                     WaveManager.instance.canSpawnWaves = false;
                 }
@@ -85,6 +87,7 @@ public class Health : MonoBehaviour
 
     public void Respawn()
     {
+       
         gameObject.SetActive(true);
         currentHealth = maxHealth;
         UIManager.instance.healthBar.value = currentHealth;

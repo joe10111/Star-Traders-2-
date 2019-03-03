@@ -32,9 +32,15 @@ public class PlayerController : MonoBehaviour {
 
     public GameObject eShot;
 
-   // public bool dashReady = false;
-   // private float dashCounter;
-   // public float dashTime = 3;
+    public bool Civ = true;
+    public bool Class1 = false;
+    public bool Class2 = false;
+    public bool Class3 = false;
+
+
+    // public bool dashReady = false;
+    // private float dashCounter;
+    // public float dashTime = 3;
 
     //public float dashDistances;
 

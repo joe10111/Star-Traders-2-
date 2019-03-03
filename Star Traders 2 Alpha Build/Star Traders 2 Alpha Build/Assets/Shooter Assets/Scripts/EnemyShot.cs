@@ -6,18 +6,33 @@ public class EnemyShot : MonoBehaviour
 {
     public float shotSpeed = 7f;
     public GameObject impactEffect;
+    private Transform player;
+    private Vector2 target;
+    public bool trackingShot = false;
     
 
     // Use this for initialization
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("PlayerShotBox").transform;
 
+        target = new Vector2(player.position.x, player.position.y);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position -= new Vector3(0f, shotSpeed * Time.deltaTime, 0f);
+        if(trackingShot == true)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target, shotSpeed * Time.deltaTime);
+        }
+        else
+        {
+            transform.position -= new Vector3(0f, shotSpeed * Time.deltaTime, 0f);
+        }
+            
+       
+      
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -27,7 +42,11 @@ public class EnemyShot : MonoBehaviour
         {
             Health.instance.DamageToPlayer();
         }
-        Destroy(this.gameObject);
+        Destroy(gameObject);
+        if (other.tag == "ShotBox2")
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnBecameInvisible()

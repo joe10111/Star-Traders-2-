@@ -5,7 +5,7 @@ using UnityEngine;
 public class WaveManager : MonoBehaviour
 {
     public static WaveManager instance;
-
+    public Transform[] startingPositions;
     public WaveObject[] waves;
 
     public int currentwave;
@@ -22,12 +22,16 @@ public class WaveManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
+        
         timeToNextWave = waves[0].timeToSpawn;
     }
 
     // Update is called once per frame
     void Update()
     {
+        int rand = Random.Range(0, 7);
+
         if (canSpawnWaves)
         {
             timeToNextWave -= Time.deltaTime;

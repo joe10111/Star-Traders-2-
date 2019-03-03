@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public static EnemyController instance;
     public float moveSpeed;
 
     public Vector2 startDirection;
@@ -11,10 +12,12 @@ public class EnemyController : MonoBehaviour
 
     public bool shouldChangeDirection;
     public float changeDirectionXpoint, changeDirectionXpoint2;
+    
     public Vector2 changedDirection, changedDirection2;
   
     public GameObject shotToFire;
-    public Transform firePoint;
+    public Transform firePoint, firePoint2, firePoint3, firePoint4;
+   
     public float timeBetweenShot;
     private float shotCounter;
 
@@ -29,15 +32,24 @@ public class EnemyController : MonoBehaviour
     public GameObject[] powerUps;
     public int dropSuccessRate = 15;
 
-    
-
     public bool changedDir2 = true;
     public bool changedDir3 = true;
 
+    private Transform player;
+
+    public bool twoGuns = false;
+    public bool threeGuns = false;
+    public bool fourGuns = false;
+    private void Awake()
+    {
+        instance = this;
+    }
     // Use this for initialization
     void Start ()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         shotCounter = timeBetweenShot;	
+
 	}
 	
 	// Update is called once per frame
@@ -75,6 +87,18 @@ public class EnemyController : MonoBehaviour
             {
                 shotCounter = timeBetweenShot;
                 Instantiate(shotToFire, firePoint.position, firePoint.rotation);
+                if(twoGuns == true)
+                {
+                    Instantiate(shotToFire, firePoint2.position, firePoint2.rotation);
+                }
+                if (threeGuns == true)
+                {
+                    Instantiate(shotToFire, firePoint3.position, firePoint3.rotation);
+                }
+                if (fourGuns == true)
+                {
+                    Instantiate(shotToFire, firePoint4.position, firePoint4.rotation);
+                }
             }
         }
     }

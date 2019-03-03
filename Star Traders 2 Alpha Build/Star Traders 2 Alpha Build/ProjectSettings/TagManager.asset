@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Space Object
   - Enemy
+  - PlayerShotBox
   layers:
   - Default
   - TransparentFX

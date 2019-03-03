@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
             highScore = PlayerPrefs.GetInt("HighSCORE");
             UIManager.instance.highScoreText.text = "HI-SCORE: " + highScore;
         }
-            if (scenceName == Level1)
+            if (scenceName == Level1 && PlayerController.instance.Civ == true)
         {
             print("Level1 Loaded");
             Debug.Log(currentLives);
@@ -51,8 +51,44 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetFloat("SpeedUp", 7);
             PlayerPrefs.SetInt("HealthUp", 3);
         }
+        if (PlayerController.instance.Class1 == true)
+        {
+            print("Level1 Loaded");
+            Debug.Log(currentLives);
+            // PlayerPrefs.DeleteKey("CurrentLives", currentLives);
+            currentLives = 3;
+            PlayerPrefs.SetInt("CurrentLives", 3);
+            PlayerPrefs.SetInt("CurrentScore", 0);
+            PlayerPrefs.SetFloat("UpFireRate", .2f);
+            PlayerPrefs.SetFloat("SpeedUp", 7);
+            PlayerPrefs.SetInt("HealthUp", 3);
+        }
+        if (PlayerController.instance.Class2 == true)
+        {
+            print("Level1 Loaded");
+            Debug.Log(currentLives);
+            // PlayerPrefs.DeleteKey("CurrentLives", currentLives);
+            currentLives = 3;
+            PlayerPrefs.SetInt("CurrentLives", 3);
+            PlayerPrefs.SetInt("CurrentScore", 0);
+            PlayerPrefs.SetFloat("UpFireRate", .7f);
+            PlayerPrefs.SetFloat("SpeedUp", 6);
+            PlayerPrefs.SetInt("HealthUp", 4);
+        }
+        if (PlayerController.instance.Class3 == true)
+        {
+            print("Level1 Loaded");
+            Debug.Log(currentLives);
+            // PlayerPrefs.DeleteKey("CurrentLives", currentLives);
+            currentLives = 3;
+            PlayerPrefs.SetInt("CurrentLives", 3);
+            PlayerPrefs.SetInt("CurrentScore", 0);
+            PlayerPrefs.SetFloat("UpFireRate", .6f);
+            PlayerPrefs.SetFloat("SpeedUp", 10);
+            PlayerPrefs.SetInt("HealthUp", 3);
+        }
 
-            //upgrades
+        //upgrades
         //FireRate
         PlayerController.instance.timeBetweenShots = PlayerPrefs.GetFloat("UpFireRate");
         //Health
