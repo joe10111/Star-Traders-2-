@@ -10,7 +10,7 @@ public class MoveHighScoreName : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = new Vector3()
+       
     }
 
     // Update is called once per frame
@@ -18,11 +18,11 @@ public class MoveHighScoreName : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-
+            transform.position = new Vector3(0, -1, 0);
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            transform.position 
+            transform.position = new Vector3(0, 1, 0);
         }
     }
 }
