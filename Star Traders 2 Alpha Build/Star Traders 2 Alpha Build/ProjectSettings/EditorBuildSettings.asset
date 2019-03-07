@@ -42,6 +42,9 @@ EditorBuildSettings:
     path: Assets/Orginal Assets/Levels/Upgrade 4.unity
     guid: 6ab2f2d0ffc09bc4db5327b51c5c7b11
   - enabled: 1
-    path: Assets/Orginal Assets/Levels/HighScores.unity
+    path: Assets/Orginal Assets/Levels/HighScoreFolder/HighScores.unity
     guid: c5c03d88e0a212041af92fe2719fa346
+  - enabled: 1
+    path: Assets/Orginal Assets/Levels/HighScoreFolder/NameSelect.unity
+    guid: ddea4dcb98efe19418949ab3a07b0d07
   m_configObjects: {}

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HighScore : MonoBehaviour
 {
@@ -105,12 +106,19 @@ public class HighScore : MonoBehaviour
         nameText10.text = "---" + PlayerPrefs.GetString("name10");
 
         score = PlayerPrefs.GetInt("score");
+        name = PlayerPrefs.GetString("CurrentName");
 
         Debug.Log("score" + score);
     }
 
     private void Update()
     {
+
+        if(Input.GetKeyDown(KeyCode.Return))
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
+
         //Check for High Scores
         if (score > PlayerPrefs.GetInt("highScore", highScore1) && score != 0)
         {
@@ -354,7 +362,7 @@ public class HighScore : MonoBehaviour
 
     public void NameInput1()
     {
-        name1 = "player";
+        name1 = name;
         PlayerPrefs.SetString("name1", name1);
 
         UpdateText();

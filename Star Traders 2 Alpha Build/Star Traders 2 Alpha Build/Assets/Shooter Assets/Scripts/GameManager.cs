@@ -121,7 +121,7 @@ public class GameManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("score", currentScore);
 
-            SceneManager.LoadScene("HighScores");
+            SceneManager.LoadScene("NameSelect");
            
         }
 
@@ -133,7 +133,13 @@ public class GameManager : MonoBehaviour
         {
             PlayerController.instance.transform.position += new Vector3(0f, PlayerController.instance.boostSpeed * Time.deltaTime, 0f);
         }
+
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            KillPlayer();
+        }
     }
+    
     public void KillPlayer()
     {
         currentLives--;
@@ -196,6 +202,13 @@ public class GameManager : MonoBehaviour
         {
             yield return new WaitForSeconds(.5f);
             UIManager.instance.highscoreNotice.SetActive(true);
+        }
+
+        if (currentScore >= PlayerPrefs.GetInt("highScore10"))
+        {
+            PlayerPrefs.SetInt("score", currentScore);
+            SceneManager.LoadScene("NameSelect");
+            Debug.Log("newHighScore");
         }
 
         PlayerPrefs.SetInt("HighSCORE", highScore);
