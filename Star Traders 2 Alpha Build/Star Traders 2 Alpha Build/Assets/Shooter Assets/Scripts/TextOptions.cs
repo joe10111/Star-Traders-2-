@@ -428,6 +428,8 @@ public class TextOptions : MonoBehaviour
         scriptMove.GetComponent<MoveTextOne>().secondMove = true;
         scriptMove.GetComponent<MoveTextOne>().firstMove = false;
 
+        scriptMove.GetComponent<MoveTextOne>().box.SetActive(true);
+
         secondButton.Select();
     }
 

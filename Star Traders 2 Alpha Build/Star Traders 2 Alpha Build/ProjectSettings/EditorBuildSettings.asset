@@ -6,40 +6,40 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Orginal Assets/Levels/Title Screen.unity
+    path: Assets/Orginal Assets/Levels/Menu/Title Screen.unity
     guid: b8d84c4bc5d62fb4bb6385b76f7c4e5f
   - enabled: 1
-    path: Assets/Orginal Assets/Levels/Main Menu.unity
+    path: Assets/Orginal Assets/Levels/Menu/Main Menu.unity
     guid: 5a8ef622c65a23640ab6c87a2a6e8b31
   - enabled: 1
-    path: Assets/Orginal Assets/Levels/Level1.unity
+    path: Assets/Orginal Assets/Levels/Levels/Level1.unity
     guid: f4d66a0f4f34058479e16c987919e67e
   - enabled: 1
-    path: Assets/Orginal Assets/Levels/Upgrade.unity
+    path: Assets/Orginal Assets/Levels/Upgrades/Upgrade.unity
     guid: 3be72fc333f39a34baf8fa00ae9409bc
   - enabled: 1
-    path: Assets/Orginal Assets/Levels/Level2.unity
+    path: Assets/Orginal Assets/Levels/Levels/Level2.unity
     guid: 8da6367f2744eda4bb933d988e7f9022
   - enabled: 1
-    path: Assets/Orginal Assets/Levels/Upgrade 1.unity
+    path: Assets/Orginal Assets/Levels/Upgrades/Upgrade 1.unity
     guid: 825c5c25b073cbb49a068d6127299788
   - enabled: 1
-    path: Assets/Orginal Assets/Levels/Level3.unity
+    path: Assets/Orginal Assets/Levels/Levels/Level3.unity
     guid: 8e8af1639d32d7d4895807246e31135a
   - enabled: 1
-    path: Assets/Orginal Assets/Levels/Upgrade 2.unity
+    path: Assets/Orginal Assets/Levels/Upgrades/Upgrade 2.unity
     guid: fdd1af656be31e548b98c0dd12c5cbff
   - enabled: 1
-    path: Assets/Orginal Assets/Levels/Level4.unity
+    path: Assets/Orginal Assets/Levels/Levels/Level4.unity
     guid: 9eb1e30e29728cb4d95672eeed279536
   - enabled: 1
-    path: Assets/Orginal Assets/Levels/Upgrade 3.unity
+    path: Assets/Orginal Assets/Levels/Upgrades/Upgrade 3.unity
     guid: 3f40185b33ed6b94286ed37b0838318a
   - enabled: 1
-    path: Assets/Orginal Assets/Levels/Level5.unity
+    path: Assets/Orginal Assets/Levels/Levels/Level5.unity
     guid: 5c255fd2787ef5443858663e050644bb
   - enabled: 1
-    path: Assets/Orginal Assets/Levels/Upgrade 4.unity
+    path: Assets/Orginal Assets/Levels/Upgrades/Upgrade 4.unity
     guid: 6ab2f2d0ffc09bc4db5327b51c5c7b11
   - enabled: 1
     path: Assets/Orginal Assets/Levels/HighScoreFolder/HighScores.unity

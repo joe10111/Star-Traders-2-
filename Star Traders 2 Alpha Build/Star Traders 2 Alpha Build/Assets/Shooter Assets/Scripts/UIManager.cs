@@ -10,6 +10,8 @@ public class UIManager : MonoBehaviour
 
     public GameObject gameOverScreen;
 
+    public GameObject gameOverAndNewHighscore;
+
     public Text livesText;
 
     public Slider healthBar, shieldBar;

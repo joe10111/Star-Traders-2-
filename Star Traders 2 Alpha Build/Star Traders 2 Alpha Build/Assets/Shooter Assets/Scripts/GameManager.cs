@@ -150,17 +150,32 @@ public class GameManager : MonoBehaviour
             StartCoroutine(RespawnCo());
         }else
         {
-            //GameOver
-            UIManager.instance.gameOverScreen.SetActive(true);
-            WaveManager.instance.canSpawnWaves = false;
+            if (currentScore >= PlayerPrefs.GetInt("highScore10"))
+            {
+                StartCoroutine(NewHighscoreCo());
+            }
+            else
+            {
+                //GameOver
+                UIManager.instance.gameOverScreen.SetActive(true);
+                WaveManager.instance.canSpawnWaves = false;
 
-            PlayerPrefs.SetInt("HighSCORE", highScore);
+                PlayerPrefs.SetInt("HighSCORE", highScore);
 
-            PlayerPrefs.SetInt("score", currentScore);
+                PlayerPrefs.SetInt("score", currentScore);
+            }
         }
     }
 
-
+    public IEnumerator NewHighscoreCo()
+    {
+        UIManager.instance.gameOverAndNewHighscore.SetActive(true);
+        WaveManager.instance.canSpawnWaves = false;
+        yield return new WaitForSeconds(5);
+       PlayerPrefs.SetInt("score", currentScore);
+       SceneManager.LoadScene("NameSelect");
+       Debug.Log("newHighScore");
+    }
     public IEnumerator RespawnCo()
     {
         yield return new WaitForSeconds(respawnTime);
@@ -204,12 +219,6 @@ public class GameManager : MonoBehaviour
             UIManager.instance.highscoreNotice.SetActive(true);
         }
 
-        if (currentScore >= PlayerPrefs.GetInt("highScore10"))
-        {
-            PlayerPrefs.SetInt("score", currentScore);
-            SceneManager.LoadScene("NameSelect");
-            Debug.Log("newHighScore");
-        }
 
         PlayerPrefs.SetInt("HighSCORE", highScore);
         PlayerPrefs.SetInt("CurrentLives", currentLives);

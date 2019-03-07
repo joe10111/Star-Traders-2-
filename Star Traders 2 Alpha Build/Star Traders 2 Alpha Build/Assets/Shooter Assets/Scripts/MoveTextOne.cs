@@ -37,6 +37,8 @@ public class MoveTextOne: MonoBehaviour
         firstPosition = firstst.transform.position;
         secondPosition = secondObj.transform.position;
         thirdPosition = thirdObj.transform.position;
+
+        Debug.Log(firstPosition);
     }
 
     // Update is called once per frame
@@ -44,7 +46,7 @@ public class MoveTextOne: MonoBehaviour
     {
         if (firstMove == true)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && firstst.transform.position.y > -1)
+            if (Input.GetKey(KeyCode.UpArrow) && firstst.transform.position.y > -0.5)
             {
                 if (scrollDown <= 0)
                 {
@@ -72,7 +74,7 @@ public class MoveTextOne: MonoBehaviour
 
         if (secondMove == true)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && secondObj.transform.position.y > -1)
+            if (Input.GetKey(KeyCode.UpArrow) && secondObj.transform.position.y > -0.5)
             {
                 if (scrollDown <= 0)
                 {
@@ -99,7 +101,7 @@ public class MoveTextOne: MonoBehaviour
 
         if (thirdMove == true)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && thirdObj.transform.position.y > -1)
+            if (Input.GetKey(KeyCode.UpArrow) && thirdObj.transform.position.y > -0.5)
             {
                 if (scrollDown <= 0)
                 {

@@ -120,7 +120,7 @@ public class HighScore : MonoBehaviour
         }
 
         //Check for High Scores
-        if (score > PlayerPrefs.GetInt("highScore", highScore1) && score != 0)
+        if (score >= PlayerPrefs.GetInt("highScore", highScore1) && score != 0)
         {
             PlayerPrefs.SetInt("highScore10", PlayerPrefs.GetInt("highScore9"));
             PlayerPrefs.SetInt("highScore9", PlayerPrefs.GetInt("highScore8"));
@@ -144,8 +144,11 @@ public class HighScore : MonoBehaviour
 
             HighScoreInput();
             NameInput1();
+
+            score = 0;
+            name = "---";
         }
-        if (score > PlayerPrefs.GetInt("highScore2", highScore2) && score < PlayerPrefs.GetInt("highScore", highScore1))
+        if (score >= PlayerPrefs.GetInt("highScore2", highScore2) && score < PlayerPrefs.GetInt("highScore", highScore1))
         {
             PlayerPrefs.SetInt("highScore10", PlayerPrefs.GetInt("highScore9"));
             PlayerPrefs.SetInt("highScore9", PlayerPrefs.GetInt("highScore8"));
@@ -167,8 +170,11 @@ public class HighScore : MonoBehaviour
 
             HighScoreInput2();
             NameInput2();
+
+            score = 0;
+            name = "---";
         }
-        if (score > PlayerPrefs.GetInt("highScore3", highScore3) && score < PlayerPrefs.GetInt("highScore2", highScore2))
+        if (score >= PlayerPrefs.GetInt("highScore3", highScore3) && score < PlayerPrefs.GetInt("highScore2", highScore2))
         {
             PlayerPrefs.SetInt("highScore10", PlayerPrefs.GetInt("highScore9"));
             PlayerPrefs.SetInt("highScore9", PlayerPrefs.GetInt("highScore8"));
@@ -188,8 +194,11 @@ public class HighScore : MonoBehaviour
 
             HighScoreInput3();
             NameInput3();
+
+            score = 0;
+            name = "---";
         }
-        if (score > PlayerPrefs.GetInt("highScore4", highScore4) && score < PlayerPrefs.GetInt("highScore3", highScore3))
+        if (score >= PlayerPrefs.GetInt("highScore4", highScore4) && score < PlayerPrefs.GetInt("highScore3", highScore3))
         {
             PlayerPrefs.SetInt("highScore10", PlayerPrefs.GetInt("highScore9"));
             PlayerPrefs.SetInt("highScore9", PlayerPrefs.GetInt("highScore8"));
@@ -207,8 +216,11 @@ public class HighScore : MonoBehaviour
 
             HighScoreInput4();
             NameInput4();
+
+            score = 0;
+            name = "---";
         }
-        if (score > PlayerPrefs.GetInt("highScore5", highScore5) && score < PlayerPrefs.GetInt("highScore4", highScore4))
+        if (score >= PlayerPrefs.GetInt("highScore5", highScore5) && score < PlayerPrefs.GetInt("highScore4", highScore4))
         {
             PlayerPrefs.SetInt("highScore10", PlayerPrefs.GetInt("highScore9"));
             PlayerPrefs.SetInt("highScore9", PlayerPrefs.GetInt("highScore8"));
@@ -224,8 +236,11 @@ public class HighScore : MonoBehaviour
 
             HighScoreInput5();
             NameInput5();
+
+            score = 0;
+            name = "---";
         }
-        if (score > PlayerPrefs.GetInt("highScore6", highScore6) && score < PlayerPrefs.GetInt("highScore5", highScore5))
+        if (score >= PlayerPrefs.GetInt("highScore6", highScore6) && score < PlayerPrefs.GetInt("highScore5", highScore5))
         {
             PlayerPrefs.SetInt("highScore10", PlayerPrefs.GetInt("highScore9"));
             PlayerPrefs.SetInt("highScore9", PlayerPrefs.GetInt("highScore8"));
@@ -239,8 +254,11 @@ public class HighScore : MonoBehaviour
 
             HighScoreInput6();
             NameInput6();
+
+            score = 0;
+            name = "---";
         }
-        if (score > PlayerPrefs.GetInt("highScore7", highScore7) && score < PlayerPrefs.GetInt("highScore6", highScore6))
+        if (score >= PlayerPrefs.GetInt("highScore7", highScore7) && score < PlayerPrefs.GetInt("highScore6", highScore6))
         {
             PlayerPrefs.SetInt("highScore10", PlayerPrefs.GetInt("highScore9"));
             PlayerPrefs.SetInt("highScore9", PlayerPrefs.GetInt("highScore8"));
@@ -252,8 +270,11 @@ public class HighScore : MonoBehaviour
 
             HighScoreInput7();
             NameInput7();
+
+            score = 0;
+            name = "---";
         }
-        if (score > PlayerPrefs.GetInt("highScore8", highScore8) && score < PlayerPrefs.GetInt("highScore7", highScore7))
+        if (score >= PlayerPrefs.GetInt("highScore8", highScore8) && score < PlayerPrefs.GetInt("highScore7", highScore7))
         {
             PlayerPrefs.SetInt("highScore10", PlayerPrefs.GetInt("highScore9"));
             PlayerPrefs.SetInt("highScore9", PlayerPrefs.GetInt("highScore8"));
@@ -263,8 +284,11 @@ public class HighScore : MonoBehaviour
 
             HighScoreInput8();
             NameInput8();
+
+            score = 0;
+            name = "---";
         }
-        if (score > PlayerPrefs.GetInt("highScore9", highScore9) && score < PlayerPrefs.GetInt("highScore8", highScore8))
+        if (score >= PlayerPrefs.GetInt("highScore9", highScore9) && score < PlayerPrefs.GetInt("highScore8", highScore8))
         {
             PlayerPrefs.SetInt("highScore10", PlayerPrefs.GetInt("highScore9"));
 
@@ -272,11 +296,18 @@ public class HighScore : MonoBehaviour
 
             HighScoreInput9();
             NameInput9();
+
+            score = 0;
+            name = "---";
         }
-        if (score > PlayerPrefs.GetInt("highScore10", highScore10) && score < PlayerPrefs.GetInt("highScore9", highScore9))
+        if (score >= PlayerPrefs.GetInt("highScore10", highScore10) && score < PlayerPrefs.GetInt("highScore9", highScore9))
         {
             HighScoreInput10();
             NameInput10();
+
+            score = 0;
+            name = "---";
+
         }
         ///prefab reset
         if (Input.GetKeyDown(KeyCode.Backspace))
