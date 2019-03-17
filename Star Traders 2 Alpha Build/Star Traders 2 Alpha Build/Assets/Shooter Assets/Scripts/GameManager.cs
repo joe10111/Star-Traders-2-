@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
 
     public string Level1 = "Level1";
 
+    public int levelNumber;
+
     private void Awake()
     {
         instance = this;
@@ -39,43 +41,7 @@ public class GameManager : MonoBehaviour
             highScore = PlayerPrefs.GetInt("HighSCORE");
             UIManager.instance.highScoreText.text = "HI-SCORE: " + highScore;
         }
-            if (scenceName == Level1 && PlayerController.instance.Civ == true)
-        {
-            print("Level1 Loaded");
-            Debug.Log(currentLives);
-         // PlayerPrefs.DeleteKey("CurrentLives", currentLives);
-            currentLives = 3;
-            PlayerPrefs.SetInt("CurrentLives", 3);
-            PlayerPrefs.SetInt("CurrentScore", 0);
-            PlayerPrefs.SetFloat("UpFireRate", .6f);
-            PlayerPrefs.SetFloat("SpeedUp", 7);
-            PlayerPrefs.SetInt("HealthUp", 3);
-        }
-        if (PlayerController.instance.Class1 == true)
-        {
-            print("Level1 Loaded");
-            Debug.Log(currentLives);
-            // PlayerPrefs.DeleteKey("CurrentLives", currentLives);
-            currentLives = 3;
-            PlayerPrefs.SetInt("CurrentLives", 3);
-            PlayerPrefs.SetInt("CurrentScore", 0);
-            PlayerPrefs.SetFloat("UpFireRate", .2f);
-            PlayerPrefs.SetFloat("SpeedUp", 7);
-            PlayerPrefs.SetInt("HealthUp", 3);
-        }
-        if (PlayerController.instance.Class2 == true)
-        {
-            print("Level1 Loaded");
-            Debug.Log(currentLives);
-            // PlayerPrefs.DeleteKey("CurrentLives", currentLives);
-            currentLives = 3;
-            PlayerPrefs.SetInt("CurrentLives", 3);
-            PlayerPrefs.SetInt("CurrentScore", 0);
-            PlayerPrefs.SetFloat("UpFireRate", .7f);
-            PlayerPrefs.SetFloat("SpeedUp", 6);
-            PlayerPrefs.SetInt("HealthUp", 4);
-        }
-        if (PlayerController.instance.Class3 == true)
+        if (scenceName == Level1)
         {
             print("Level1 Loaded");
             Debug.Log(currentLives);
@@ -84,44 +50,60 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("CurrentLives", 3);
             PlayerPrefs.SetInt("CurrentScore", 0);
             PlayerPrefs.SetFloat("UpFireRate", .6f);
-            PlayerPrefs.SetFloat("SpeedUp", 10);
+            PlayerPrefs.SetFloat("SpeedUp", 7);
             PlayerPrefs.SetInt("HealthUp", 3);
+            PlayerPrefs.SetInt("LevelNumber", 1);
         }
 
+        
+        levelNumber = PlayerPrefs.GetInt("LevelNumber");
         //upgrades
         //FireRate
         PlayerController.instance.timeBetweenShots = PlayerPrefs.GetFloat("UpFireRate");
-        //Health
-        Health.instance.maxHealth = PlayerPrefs.GetInt("HealthUp");
-        Health.instance.currentHealth = Health.instance.maxHealth;
-        UIManager.instance.healthBar.maxValue = Health.instance.maxHealth;
-        UIManager.instance.healthBar.value = Health.instance.currentHealth;
-        print(Health.instance.maxHealth);
-        //Speed
-        PlayerController.instance.moveSpeed = PlayerPrefs.GetFloat("SpeedUp");
-    
+            //Health
+            Health.instance.maxHealth = PlayerPrefs.GetInt("HealthUp");
+            Health.instance.currentHealth = Health.instance.maxHealth;
+            UIManager.instance.healthBar.maxValue = Health.instance.maxHealth;
+            UIManager.instance.healthBar.value = Health.instance.currentHealth;
+            print(Health.instance.maxHealth);
+            //Speed
+            PlayerController.instance.moveSpeed = PlayerPrefs.GetFloat("SpeedUp");
+
             //upgrades
 
-        currentLives = PlayerPrefs.GetInt("CurrentLives");
-         UIManager.instance.livesText.text = "X " + currentLives;
-       
-       
+            currentLives = PlayerPrefs.GetInt("CurrentLives");
+            UIManager.instance.livesText.text = "X " + currentLives;
+        
 
 
-        highScore = PlayerPrefs.GetInt("HighSCORE");
-        UIManager.instance.highScoreText.text = "HI-SCORE: " + highScore;
 
-        currentScore = PlayerPrefs.GetInt("CurrentScore");
-        UIManager.instance.scoreText.text = "SCORE: " + currentScore;
+             highScore = PlayerPrefs.GetInt("HighSCORE");
+            UIManager.instance.highScoreText.text = "HI-SCORE: " + highScore;
+
+            currentScore = PlayerPrefs.GetInt("CurrentScore");
+            UIManager.instance.scoreText.text = "SCORE: " + currentScore;
+        
     }
 
      void Update()
     {
+        if(levelNumber == 3)
+        {
+            WaveManager.instance.esay = false;
+            WaveManager.instance.medium = true;
+        }
+
+        if (levelNumber == 5)
+        {
+            WaveManager.instance.esay = false;
+            WaveManager.instance.medium = false;
+            WaveManager.instance.hard = true;
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            PlayerPrefs.SetInt("score", currentScore);
 
-            SceneManager.LoadScene("NameSelect");
+
+            StartCoroutine(EndLevelCo());
            
         }
 
@@ -218,8 +200,8 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(.5f);
             UIManager.instance.highscoreNotice.SetActive(true);
         }
-
-
+        levelNumber += 1;
+        PlayerPrefs.SetInt("LevelNumber", levelNumber);
         PlayerPrefs.SetInt("HighSCORE", highScore);
         PlayerPrefs.SetInt("CurrentLives", currentLives);
 

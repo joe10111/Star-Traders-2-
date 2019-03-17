@@ -126,6 +126,13 @@ MonoBehaviour:
     type: 3}
   objectExplostion: {fileID: 1284626922695594, guid: 90e15a9a694b8004997b55b0b1b28beb,
     type: 3}
+  sinWave: 0
+  sinWaveLeft: 0
+  sinWaveRight: 0
+  amplitude: 0.2
+  amplitudePlus: 0
+  speed: 6
+  cyclesPerSecond: 3
 --- !u!50 &50864255137817736
 Rigidbody2D:
   serializedVersion: 4

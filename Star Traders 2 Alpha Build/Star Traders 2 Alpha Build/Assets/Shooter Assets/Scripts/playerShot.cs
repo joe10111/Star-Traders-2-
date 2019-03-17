@@ -8,7 +8,15 @@ public class playerShot : MonoBehaviour
     public GameObject impactEffect;
     public GameObject objectExplostion;
     public static playerShot instance;
-
+    //sin wave
+    public bool sinWave = false;
+    public bool sinWaveLeft = false;
+    public bool sinWaveRight = false;
+    public float amplitude = .0000000001f;
+    public float amplitudePlus = .0000000001f;
+    public float speed = 2;
+    public float cyclesPerSecond = 1;
+    float curTime = 0;
 
     private void Awake()
     {
@@ -23,9 +31,26 @@ public class playerShot : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+
+        if (sinWave == true)
+        {
+            transform.position += new Vector3(amplitude * Mathf.Sin(cyclesPerSecond * curTime * 2 * Mathf.PI), shotSpeed * Time.deltaTime, transform.position.z);
+            amplitude += amplitudePlus * Time.deltaTime;
+            curTime += Time.deltaTime;
+            if (sinWaveLeft == true)
+            {
+                transform.position += new Vector3(-(amplitude * Mathf.Sin(cyclesPerSecond * curTime * 2 * Mathf.PI)), shotSpeed * Time.deltaTime, transform.position.z);
+                amplitude += amplitudePlus * Time.deltaTime;
+                curTime += Time.deltaTime;
+            }
+           
+        }
+        else
+        {
+            transform.position += new Vector3(0f, shotSpeed * Time.deltaTime, 0f);
+        }
         
-        transform.position += new Vector3(0f, shotSpeed * Time.deltaTime, 0f);
-	}
+    }
 
     public IEnumerator UpBulletSpeed()
     {
@@ -34,7 +59,7 @@ public class playerShot : MonoBehaviour
         PlayerPrefs.SetFloat("UpBulletSpeed", shotSpeed);
         print(shotSpeed);
         yield return new WaitForSeconds(2);
-        Application.LoadLevel(Application.loadedLevel + 1);
+        
         ///Dose not Work/////
     }
     private void OnTriggerEnter2D(Collider2D other)

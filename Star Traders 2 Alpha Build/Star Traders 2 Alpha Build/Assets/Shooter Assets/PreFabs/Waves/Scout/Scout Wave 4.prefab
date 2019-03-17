@@ -134,7 +134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567962996}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1.74, y: 0.47, z: -0.03125}
+  m_LocalPosition: {x: -2.94, y: 0.47, z: -0.03125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1279037270}
@@ -248,6 +248,9 @@ MonoBehaviour:
   changedDirection2: {x: 0, y: -0.3}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 1279037270}
+  firePoint2: {fileID: 0}
+  firePoint3: {fileID: 0}
+  firePoint4: {fileID: 0}
   timeBetweenShot: 2
   canShoot: 1
   currentHealth: 2
@@ -258,9 +261,11 @@ MonoBehaviour:
   - {fileID: 6859713220532682370, guid: 8ee5a194e0771924eb3aba5a842ec22e, type: 3}
   - {fileID: 808815394158568310, guid: 42eae29b7ffb73a4482b6718dfe170cf, type: 3}
   dropSuccessRate: 0
-  deathShake: 0.5
   changedDir2: 1
   changedDir3: 1
+  twoGuns: 0
+  threeGuns: 0
+  fourGuns: 0
 --- !u!1 &1966956019
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +324,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018833444}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.86, y: 0.83, z: -0.03125}
+  m_LocalPosition: {x: 3.38, y: 0.83, z: -0.03125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1113134325}
@@ -433,6 +438,9 @@ MonoBehaviour:
   changedDirection2: {x: 0, y: -0.3}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 1113134325}
+  firePoint2: {fileID: 0}
+  firePoint3: {fileID: 0}
+  firePoint4: {fileID: 0}
   timeBetweenShot: 2
   canShoot: 1
   currentHealth: 2
@@ -443,9 +451,11 @@ MonoBehaviour:
   - {fileID: 6859713220532682370, guid: 8ee5a194e0771924eb3aba5a842ec22e, type: 3}
   - {fileID: 808815394158568310, guid: 42eae29b7ffb73a4482b6718dfe170cf, type: 3}
   dropSuccessRate: 0
-  deathShake: 0.5
   changedDir2: 1
   changedDir3: 1
+  twoGuns: 0
+  threeGuns: 0
+  fourGuns: 0
 --- !u!1 &2064915683
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +598,9 @@ MonoBehaviour:
   changedDirection2: {x: 0, y: -0.3}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 1966956020}
+  firePoint2: {fileID: 0}
+  firePoint3: {fileID: 0}
+  firePoint4: {fileID: 0}
   timeBetweenShot: 2
   canShoot: 1
   currentHealth: 2
@@ -598,6 +611,8 @@ MonoBehaviour:
   - {fileID: 6859713220532682370, guid: 8ee5a194e0771924eb3aba5a842ec22e, type: 3}
   - {fileID: 808815394158568310, guid: 42eae29b7ffb73a4482b6718dfe170cf, type: 3}
   dropSuccessRate: 0
-  deathShake: 0.5
   changedDir2: 1
   changedDir3: 1
+  twoGuns: 0
+  threeGuns: 0
+  fourGuns: 0

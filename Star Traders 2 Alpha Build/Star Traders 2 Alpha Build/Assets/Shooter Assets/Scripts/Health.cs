@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -109,7 +110,7 @@ public class Health : MonoBehaviour
         PlayerPrefs.SetInt("HealthUp", maxHealth);
         print(maxHealth);
         yield return new WaitForSeconds(2);
-        Application.LoadLevel(Application.loadedLevel + 1);
+        SceneManager.LoadScene("Level2");
 
     }
 }

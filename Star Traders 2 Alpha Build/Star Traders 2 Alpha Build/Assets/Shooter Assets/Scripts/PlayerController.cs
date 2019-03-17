@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
     public static PlayerController instance;
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour {
     public Transform shotPoint;
     public Transform shotPoint2;
     public GameObject shot;
+    public GameObject shot2;
 
     public float timeBetweenShots = 0.1f;
 
@@ -100,7 +102,7 @@ public class PlayerController : MonoBehaviour {
                
             {
                 Instantiate(shot, shotPoint.position, shotPoint.rotation);
-                Instantiate(shot, shotPoint2.position, shotPoint.rotation);
+                Instantiate(shot2, shotPoint2.position, shotPoint.rotation);
                 shotCounter = 0f;
             }
             if (Input.GetKeyDown(KeyCode.Q))
@@ -144,7 +146,7 @@ public class PlayerController : MonoBehaviour {
         PlayerPrefs.SetFloat("UpFireRate", timeBetweenShots);
         print("upgraded fire");
         yield return new WaitForSeconds(2);
-         Application.LoadLevel(Application.loadedLevel + 1);
+        SceneManager.LoadScene("Level2");
     }
     public IEnumerator SpeedUp()
     {
@@ -152,7 +154,7 @@ public class PlayerController : MonoBehaviour {
         PlayerPrefs.SetFloat("SpeedUp", moveSpeed);
         print(moveSpeed);
         yield return new WaitForSeconds(2);
-        Application.LoadLevel(Application.loadedLevel + 1);
+        SceneManager.LoadScene("Level2");
     }
 
 }
