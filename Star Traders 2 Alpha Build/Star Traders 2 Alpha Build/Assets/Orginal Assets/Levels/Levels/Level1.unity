@@ -948,7 +948,7 @@ MonoBehaviour:
   - timeToSpawn: 5
     theWave: {fileID: 2073156130, guid: f754cc461c21bce49adb3c313dbd2b75, type: 3}
   currentwave: 0
-  timeToNextWave: 5
+  timeToNextWave: 3
   canSpawnWaves: 1
   waveType:
   - {fileID: 109122111, guid: e4d2ec58923878a4f9926bc79efa9caa, type: 3}
