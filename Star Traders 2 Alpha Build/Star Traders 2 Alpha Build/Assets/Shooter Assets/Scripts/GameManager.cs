@@ -232,6 +232,8 @@ public class GameManager : MonoBehaviour
                 yield return new WaitForSeconds(.5f);
                 UIManager.instance.highscoreNotice.SetActive(true);
             }
+        //difculty increase
+        
             levelNumber += 1;
             PlayerPrefs.SetInt("LevelNumber", levelNumber);
             PlayerPrefs.SetInt("HighSCORE", highScore);

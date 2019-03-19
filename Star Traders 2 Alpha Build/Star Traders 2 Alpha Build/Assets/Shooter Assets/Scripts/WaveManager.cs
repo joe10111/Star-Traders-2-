@@ -26,8 +26,9 @@ public class WaveManager : MonoBehaviour
     public bool medium;
 
     public bool hard;
+    public  int newSize = 12;
 
-    
+
 
     private void Awake()
     {
@@ -45,9 +46,24 @@ public class WaveManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (level1 == true)
+        {
+            waves[currentwave].timeToSpawn = 5;
+        }
+        else if (esay == true)
+        {
+            waves[currentwave].timeToSpawn = 3.5f;
+        }
+        else if (medium == true)
+        {
+            waves[currentwave].timeToSpawn = 3;
+        }
+        else if (hard == true)
+        {
+            waves[currentwave].timeToSpawn = 2.5f;
+        }
 
-        if (canSpawnWaves)
+            if (canSpawnWaves)
         {
             timeToNextWave -= Time.deltaTime;
             if (timeToNextWave <= 0)
@@ -63,28 +79,27 @@ public class WaveManager : MonoBehaviour
                 int rand4 = Random.Range(4, 10);
 
 
-
-
                 if (level1 == true)
                     {
+                    waves[currentwave].timeToSpawn = 5;
                     transform.position = startingPositions[rand].position;
                     Instantiate(waveType[rand1], transform.position, transform.rotation);
                     }
-                else if(esay)
+                else if(esay == true)
                     {
-                    timeToNextWave = 4;
+                    waves[currentwave].timeToSpawn = 3.5f;
                     transform.position = startingPositions[rand].position;
                     Instantiate(waveType[rand2], transform.position, transform.rotation);
                     }
-                else if (medium)
+                else if (medium == true)
                 {
-                    timeToNextWave = 3;
+                    waves[currentwave].timeToSpawn = 3;
                     transform.position = startingPositions[rand].position;
                     Instantiate(waveType[rand3], transform.position, transform.rotation);
                 }
-                else if (hard)
+                else if (hard == true)
                 {
-                    timeToNextWave = 2;
+                    waves[currentwave].timeToSpawn = 2.5f;
                     transform.position = startingPositions[rand].position;
                     Instantiate(waveType[rand4], transform.position, transform.rotation);
                 }
@@ -115,7 +130,8 @@ public class WaveManager : MonoBehaviour
         yield return new WaitForSeconds(10);
         Instantiate(endWave, endWaveTransform.transform.position, endWaveTransform.transform.rotation);
     }
-}
+    
+   }
 
 [System.Serializable]
 public class WaveObject
