@@ -104,6 +104,10 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: coinDrop.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
       propertyPath: startDirection.x
       value: 0
       objectReference: {fileID: 0}
@@ -147,6 +151,15 @@ PrefabInstance:
       propertyPath: changeDirectionXpoint2
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: dropSuccessRate
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: coinDrop.Array.data[0]
+      value: 
+      objectReference: {fileID: 808815394158568310, guid: 42eae29b7ffb73a4482b6718dfe170cf,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
 --- !u!4 &84563031000270223 stripped
@@ -217,6 +230,10 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: coinDrop.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
       propertyPath: startDirection.x
       value: 0
       objectReference: {fileID: 0}
@@ -260,6 +277,15 @@ PrefabInstance:
       propertyPath: changeDirectionXpoint2
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: dropSuccessRate
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: coinDrop.Array.data[0]
+      value: 
+      objectReference: {fileID: 808815394158568310, guid: 42eae29b7ffb73a4482b6718dfe170cf,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
 --- !u!4 &4343429368533973796 stripped
@@ -330,6 +356,10 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: coinDrop.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
       propertyPath: startDirection.x
       value: 0
       objectReference: {fileID: 0}
@@ -373,6 +403,15 @@ PrefabInstance:
       propertyPath: changeDirectionXpoint2
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: dropSuccessRate
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: coinDrop.Array.data[0]
+      value: 
+      objectReference: {fileID: 808815394158568310, guid: 42eae29b7ffb73a4482b6718dfe170cf,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
 --- !u!4 &5483478908914683038 stripped
@@ -443,6 +482,10 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: coinDrop.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
       propertyPath: startDirection.x
       value: 0
       objectReference: {fileID: 0}
@@ -486,6 +529,15 @@ PrefabInstance:
       propertyPath: changeDirectionXpoint2
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: dropSuccessRate
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: coinDrop.Array.data[0]
+      value: 
+      objectReference: {fileID: 808815394158568310, guid: 42eae29b7ffb73a4482b6718dfe170cf,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
 --- !u!4 &6475065948556806236 stripped
@@ -556,6 +608,10 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: coinDrop.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
       propertyPath: startDirection.x
       value: 0
       objectReference: {fileID: 0}
@@ -599,6 +655,15 @@ PrefabInstance:
       propertyPath: changeDirectionXpoint2
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: dropSuccessRate
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 231270741, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
+      propertyPath: coinDrop.Array.data[0]
+      value: 
+      objectReference: {fileID: 808815394158568310, guid: 42eae29b7ffb73a4482b6718dfe170cf,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b404461b578ce84bafd2f787398cd1c, type: 3}
 --- !u!4 &7439956049981244621 stripped

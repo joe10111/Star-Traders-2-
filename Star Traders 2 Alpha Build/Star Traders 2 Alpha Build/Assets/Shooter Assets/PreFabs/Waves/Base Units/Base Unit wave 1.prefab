@@ -217,19 +217,23 @@ MonoBehaviour:
   changedDirection2: {x: 0.8, y: -0.2}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 1834337264}
+  firePoint2: {fileID: 0}
+  firePoint3: {fileID: 0}
+  firePoint4: {fileID: 0}
   timeBetweenShot: 2
   canShoot: 1
   currentHealth: 3
   DeathEffect: {fileID: 1229876416362346, guid: dbce13e23c60ef44a93b2cf87b964d02,
     type: 3}
   scoreValue: 150
-  powerUps:
-  - {fileID: 6859713220532682370, guid: 8ee5a194e0771924eb3aba5a842ec22e, type: 3}
+  coinDrop:
   - {fileID: 808815394158568310, guid: 42eae29b7ffb73a4482b6718dfe170cf, type: 3}
-  dropSuccessRate: 0
-  deathShake: 0.01
+  dropSuccessRate: 35
   changedDir2: 1
   changedDir3: 1
+  twoGuns: 0
+  threeGuns: 0
+  fourGuns: 0
 --- !u!1 &1828881478
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,19 +376,23 @@ MonoBehaviour:
   changedDirection2: {x: -0.8, y: -0.3}
   shotToFire: {fileID: 1701171481362492, guid: caa1312c3b16a3d4cb363da00d448724, type: 3}
   firePoint: {fileID: 343642248}
+  firePoint2: {fileID: 0}
+  firePoint3: {fileID: 0}
+  firePoint4: {fileID: 0}
   timeBetweenShot: 3.5
   canShoot: 1
   currentHealth: 3
   DeathEffect: {fileID: 1229876416362346, guid: dbce13e23c60ef44a93b2cf87b964d02,
     type: 3}
   scoreValue: 150
-  powerUps:
-  - {fileID: 6859713220532682370, guid: 8ee5a194e0771924eb3aba5a842ec22e, type: 3}
+  coinDrop:
   - {fileID: 808815394158568310, guid: 42eae29b7ffb73a4482b6718dfe170cf, type: 3}
-  dropSuccessRate: 0
-  deathShake: 0.01
+  dropSuccessRate: 35
   changedDir2: 1
   changedDir3: 1
+  twoGuns: 0
+  threeGuns: 0
+  fourGuns: 0
 --- !u!1 &1834337263
 GameObject:
   m_ObjectHideFlags: 0

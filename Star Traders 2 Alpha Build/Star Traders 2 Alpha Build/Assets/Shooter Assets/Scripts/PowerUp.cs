@@ -28,7 +28,7 @@ public class PowerUp : MonoBehaviour
         }
         if(isShield && other.tag == "Player")
         {
-            Health.instance.ActivateShield();
+            GameManager.instance.CollectCoin();
         }
         if(isBoost && other.tag == "Player")
         {

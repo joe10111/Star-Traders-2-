@@ -17,8 +17,8 @@ public class Health : MonoBehaviour
     private float invincCounter;
     public SpriteRenderer theSR;
 
-    public int shieldPwr;
-    public int shieldMaxPwr = 2;
+    public float shieldPwr;
+    public float shieldMaxPwr = 20;
     public GameObject theShield;
    
 
@@ -42,7 +42,17 @@ public class Health : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		if (invincCounter >= 0)
+        if (theShield.activeInHierarchy)
+        {
+            shieldPwr -= Time.deltaTime;
+
+            if (shieldPwr <= 0)
+            {
+                theShield.SetActive(false);
+            }
+            UIManager.instance.shieldBar.value = shieldPwr;
+        }
+        if (invincCounter >= 0)
         {
             invincCounter -= Time.deltaTime;
             if(invincCounter <= 0)
@@ -57,18 +67,8 @@ public class Health : MonoBehaviour
         CameraShake.instance.shakeDuration = .5f;
         if (invincCounter <= 0)
         {
-            if (theShield.activeInHierarchy)
+            if (!theShield.activeInHierarchy)
             {
-                shieldPwr--;
-                if(shieldPwr <= 0)
-                {
-                    theShield.SetActive(false);
-                }
-                UIManager.instance.shieldBar.value = shieldPwr;
-            }
-            else
-            {
-
                 //docing the health if player gets hurt
                 currentHealth--;
                 UIManager.instance.healthBar.value = currentHealth;
@@ -97,6 +97,7 @@ public class Health : MonoBehaviour
         theSR.color = new Color(theSR.color.r, theSR.color.g, theSR.color.b, .5f);
     }
 
+   
     public void ActivateShield()
     {
         theShield.SetActive(true);

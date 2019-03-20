@@ -29,6 +29,10 @@ public class GameManager : MonoBehaviour
 
     public Text stageText;
 
+    private AudioSource source;
+    public AudioClip coinSound;
+    public int amountOfCredits;
+
     private void Awake()
     {
         instance = this;
@@ -36,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        source = GetComponent<AudioSource>();
 
         Scene currentScence = SceneManager.GetActiveScene();
         string scenceName = currentScence.name;
@@ -92,6 +97,7 @@ public class GameManager : MonoBehaviour
     {
         if (levelNumber == 3)
         {
+           
             stageText.text = "STAGE THREE";
             WaveManager.instance.esay = false;
             WaveManager.instance.medium = true;
@@ -209,8 +215,15 @@ public class GameManager : MonoBehaviour
                 UIManager.instance.highScoreText.text = "HI-SCORE: " + highScore;
             }
         }
+    public void CollectCoin()
+    {
+        float vol = Random.Range(.5f, 1);
+        source.PlayOneShot(coinSound, vol);
+        amountOfCredits++;
+        print("Coin Colleted");
+    }
 
-        public IEnumerator EndLevelCo()
+    public IEnumerator EndLevelCo()
         {
             UIManager.instance.levelEndScreen.SetActive(true);
             PlayerController.instance.stopMovement = true;
@@ -244,6 +257,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(nextLevel);
 
         }
+    
 
-    }
+}
 

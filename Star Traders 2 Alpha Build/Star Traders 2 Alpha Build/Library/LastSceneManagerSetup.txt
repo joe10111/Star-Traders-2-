@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Orginal Assets/Levels/HighScoreFolder/HighScores.unity
+- path: Assets/Orginal Assets/Levels/Levels/Level1.unity
   isLoaded: 1
   isActive: 1

@@ -68,9 +68,7 @@ public class PlayerController : MonoBehaviour {
         {
             float Movex = Input.GetAxis("Horizontal");
             theRB.velocity = new Vector2(Movex* moveSpeed, theRB.velocity.y);
-
-         
-
+            
             float Movey = Input.GetAxis("Vertical");
             animator.SetFloat("flying", Mathf.Abs(Movey));
             theRB.velocity = new Vector2(theRB.velocity.x, Movey * moveSpeed);
@@ -105,6 +103,19 @@ public class PlayerController : MonoBehaviour {
                 Instantiate(shot2, shotPoint2.position, shotPoint.rotation);
                 shotCounter = 0f;
             }
+            //Ablitys
+            //Shield
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                Health.instance.ActivateShield();
+            }
+            //Abillity 2
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                //Do Abillity
+                print("Abillity 2");
+            }
+            //Ablitys
             if (Input.GetKeyDown(KeyCode.Q))
                 {
                 Collider2D bulletBlank = Physics2D.OverlapCircle(transform.position, 1, bullet);

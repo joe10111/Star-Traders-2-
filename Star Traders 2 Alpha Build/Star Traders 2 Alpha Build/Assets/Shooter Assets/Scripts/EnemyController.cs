@@ -29,7 +29,7 @@ public class EnemyController : MonoBehaviour
 
     public int scoreValue = 100;
 
-    public GameObject[] powerUps;
+    public GameObject[] coinDrop;
     public int dropSuccessRate = 15;
 
     public bool changedDir2 = true;
@@ -112,8 +112,8 @@ public class EnemyController : MonoBehaviour
             int randomChance = Random.Range(0, 100);
              if(randomChance < dropSuccessRate)
              {
-                int randomPick = Random.Range(0, powerUps.Length);
-                Instantiate(powerUps[randomPick], transform.position, transform.rotation);
+                int randomPick = Random.Range(0, coinDrop.Length);
+                Instantiate(coinDrop[randomPick], transform.position, transform.rotation);
              }
             CameraShake.instance.shakeAmount = .07f;
             CameraShake.instance.shakeDuration = 0.09f;
