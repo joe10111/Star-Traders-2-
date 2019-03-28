@@ -4787,41 +4787,5 @@ PrefabInstance:
       propertyPath: topRightlimit
       value: 
       objectReference: {fileID: 1081600222}
-    - target: {fileID: 1621226687135408928, guid: f6102cc47abe9bb42afe66b24bba5dc9,
-        type: 3}
-      propertyPath: Class2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621226687135408928, guid: f6102cc47abe9bb42afe66b24bba5dc9,
-        type: 3}
-      propertyPath: Class1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621226687135408928, guid: f6102cc47abe9bb42afe66b24bba5dc9,
-        type: 3}
-      propertyPath: Class3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621226687135408928, guid: f6102cc47abe9bb42afe66b24bba5dc9,
-        type: 3}
-      propertyPath: shot2
-      value: 
-      objectReference: {fileID: 1555579557746052, guid: 0281ca47013260843bf7deb6baad2583,
-        type: 3}
-    - target: {fileID: 1621226687135408928, guid: f6102cc47abe9bb42afe66b24bba5dc9,
-        type: 3}
-      propertyPath: Civ
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5171170667200533609, guid: f6102cc47abe9bb42afe66b24bba5dc9,
-        type: 3}
-      propertyPath: maxHealth
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5171170667200533609, guid: f6102cc47abe9bb42afe66b24bba5dc9,
-        type: 3}
-      propertyPath: shieldMaxPwr
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6102cc47abe9bb42afe66b24bba5dc9, type: 3}

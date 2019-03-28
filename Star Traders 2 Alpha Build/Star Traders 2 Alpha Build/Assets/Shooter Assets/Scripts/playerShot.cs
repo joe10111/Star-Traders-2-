@@ -17,6 +17,9 @@ public class playerShot : MonoBehaviour
     public float speed = 2;
     public float cyclesPerSecond = 1;
     float curTime = 0;
+    public GameObject missleExpload;
+    public GameObject DeathEffect;
+    public bool Missle = false;
 
     private void Awake()
     {
@@ -72,9 +75,21 @@ public class playerShot : MonoBehaviour
 
             GameManager.instance.AddScore(50);
         }
-        if(other.tag == "Enemy")
+        if(other.tag == "Enemy" && Missle == false)
         {
             other.GetComponent<EnemyController>().DamageEnemy();
+        }
+        else if (other.tag == "Enemy" && Missle == true)
+        {
+            Instantiate(missleExpload, transform.position, transform.rotation);
+            Instantiate(DeathEffect, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
+        else if (other.tag == "Space Object" && Missle == true)
+        {
+            Instantiate(missleExpload, transform.position, transform.rotation);
+            Instantiate(DeathEffect, transform.position, transform.rotation);
+            Destroy(gameObject);
         }
         Destroy(this.gameObject);
     }

@@ -76,6 +76,8 @@
     <Compile Include="Assets\Shooter Assets\Scripts\HighScore.cs" />
     <Compile Include="Assets\Shooter Assets\Scripts\LevelEnd.cs" />
     <Compile Include="Assets\Shooter Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Shooter Assets\Scripts\Missle.cs" />
+    <Compile Include="Assets\Shooter Assets\Scripts\MissleExplostion.cs" />
     <Compile Include="Assets\Shooter Assets\Scripts\MoveHighScoreName.cs" />
     <Compile Include="Assets\Shooter Assets\Scripts\MoveTextOne.cs" />
     <Compile Include="Assets\Shooter Assets\Scripts\MovingObject.cs" />

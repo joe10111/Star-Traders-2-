@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &838461969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 838461970}
+  m_Layer: 8
+  m_Name: MissFirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &838461970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838461969}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.61, y: -0.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8471232662863607630}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962680532873923149
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +129,7 @@ Transform:
   - {fileID: 3037833107079338311}
   - {fileID: 2882938364915113421}
   - {fileID: 6616560729785392448}
+  - {fileID: 838461970}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
@@ -190,14 +221,18 @@ MonoBehaviour:
   topRightlimit: {fileID: 0}
   shotPoint: {fileID: 3037833107079338311}
   shotPoint2: {fileID: 8775596385154671452}
+  misslePoint: {fileID: 838461970}
   shot: {fileID: 1555579557746052, guid: 12bcdfc2b6386a5459e0ee9f99785aaf, type: 3}
+  shot2: {fileID: 1555579557746052, guid: 0281ca47013260843bf7deb6baad2583, type: 3}
+  missle: {fileID: 1555579557746052, guid: 58a447351b3bf8e44890e4a25a298287, type: 3}
   timeBetweenShots: 0
-  boostSpeed: 8
-  boostLength: 3
+  missletimeBetweenShots: 2
+  boostSpeed: 18
+  boostLength: 0.2
   stopMovement: 0
   eShot: {fileID: 0}
-  Civ: 0
-  Class1: 1
+  Civ: 1
+  Class1: 0
   Class2: 0
   Class3: 0
   bullet:
@@ -232,13 +267,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  maxHealth: 3
+  maxHealth: 1
   deathEffect: {fileID: 1978668179186116, guid: 2bcc482986029fb45879e9987c903b2d,
     type: 3}
   invincibleLength: 2
   theSR: {fileID: 2660609961793285158}
   shieldPwr: 0
-  shieldMaxPwr: 2
+  shieldMaxPwr: 4
   theShield: {fileID: 5680225723389602950}
 --- !u!114 &1971400804951867435
 MonoBehaviour:

@@ -18,13 +18,17 @@ public class PlayerController : MonoBehaviour {
 
     public Transform shotPoint;
     public Transform shotPoint2;
+    public Transform misslePoint;
     public GameObject shot;
     public GameObject shot2;
+    public GameObject missle;
 
     public float timeBetweenShots = 0.1f;
+    public float missletimeBetweenShots = 2;
 
     private float shotCounter;
-   
+    private float missleshotCounter;
+
     private float normalSpeed;
     public float boostSpeed;
     public float boostLength;
@@ -38,6 +42,8 @@ public class PlayerController : MonoBehaviour {
     public bool Class1 = false;
     public bool Class2 = false;
     public bool Class3 = false;
+
+  
 
 
     // public bool dashReady = false;
@@ -76,27 +82,29 @@ public class PlayerController : MonoBehaviour {
             transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.position.x, topRightlimit.position.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.position.y, topRightlimit.position.y), transform.position.z);
 
             shotCounter += Time.deltaTime;
+            missleshotCounter += Time.deltaTime;
+            print(missleshotCounter);
+            
+                // dashCounter += Time.deltaTime;
 
-           // dashCounter += Time.deltaTime;
+                //  if (dashCounter >= dashTime)
+                //{
+                //   dashReady = true;
+                //   print("dash ready");
+                // }
 
-          //  if (dashCounter >= dashTime)
-            //{
-             //   dashReady = true;
-             //   print("dash ready");
-           // }
+                //  if (Input.GetKeyDown(KeyCode.Q ) && dashReady == true)
+                //  {
+                //   transform.position += ( new Vector3( 0,dashDistances,0) * Time.deltaTime);
+                // print("Dashed");
+                // dashReady = false;
+                //  dashCounter = 0;
+                // }
 
-          //  if (Input.GetKeyDown(KeyCode.Q ) && dashReady == true)
-          //  {
-             //   transform.position += ( new Vector3( 0,dashDistances,0) * Time.deltaTime);
-               // print("Dashed");
-               // dashReady = false;
-              //  dashCounter = 0;
-           // }
-           
-            //print(shotCounter);
-            //print(timeBetweenShots);
+                //print(shotCounter);
+                //print(timeBetweenShots);
 
-            if (Input.GetButtonDown("Fire1") && shotCounter >= timeBetweenShots)
+                if (Input.GetButtonDown("Fire1") && shotCounter >= timeBetweenShots)
                
             {
                 Instantiate(shot, shotPoint.position, shotPoint.rotation);
@@ -112,24 +120,15 @@ public class PlayerController : MonoBehaviour {
             //Abillity 2
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                //Do Abillity
-                print("Abillity 2");
+                ActivateSpeedBoost();
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3) && missleshotCounter >= missletimeBetweenShots)
+            {
+                Instantiate(missle, misslePoint.position, misslePoint.rotation);
+                missleshotCounter = 0f;
+                
             }
             //Ablitys
-            if (Input.GetKeyDown(KeyCode.Q))
-                {
-                Collider2D bulletBlank = Physics2D.OverlapCircle(transform.position, 1, bullet);
-                if(bulletBlank == null)
-                     {
-                    print("No bullets");
-                     }
-                 else
-                    {
-                    DestroyImmediate(eShot, true);
-                     }
-                }
-            
-
             if (boostCounter > 0)
             {
                 boostCounter -= Time.deltaTime;
@@ -146,7 +145,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     
-        public void ActivateSpeedBoost()
+       public void ActivateSpeedBoost()
          {
         boostCounter = boostLength;
         moveSpeed = boostSpeed;
@@ -167,5 +166,6 @@ public class PlayerController : MonoBehaviour {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("Level2");
     }
+    
 
 }
