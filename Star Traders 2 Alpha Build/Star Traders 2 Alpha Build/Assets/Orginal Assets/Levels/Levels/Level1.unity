@@ -947,6 +947,18 @@ MonoBehaviour:
     theWave: {fileID: 2073156130, guid: f754cc461c21bce49adb3c313dbd2b75, type: 3}
   - timeToSpawn: 5
     theWave: {fileID: 2073156130, guid: f754cc461c21bce49adb3c313dbd2b75, type: 3}
+  - timeToSpawn: 5
+    theWave: {fileID: 2073156130, guid: f754cc461c21bce49adb3c313dbd2b75, type: 3}
+  - timeToSpawn: 5
+    theWave: {fileID: 2073156130, guid: f754cc461c21bce49adb3c313dbd2b75, type: 3}
+  - timeToSpawn: 5
+    theWave: {fileID: 2073156130, guid: f754cc461c21bce49adb3c313dbd2b75, type: 3}
+  - timeToSpawn: 5
+    theWave: {fileID: 2073156130, guid: f754cc461c21bce49adb3c313dbd2b75, type: 3}
+  - timeToSpawn: 5
+    theWave: {fileID: 2073156130, guid: f754cc461c21bce49adb3c313dbd2b75, type: 3}
+  - timeToSpawn: 5
+    theWave: {fileID: 2073156130, guid: f754cc461c21bce49adb3c313dbd2b75, type: 3}
   currentwave: 0
   timeToNextWave: 3
   canSpawnWaves: 1
@@ -3556,6 +3568,7 @@ MonoBehaviour:
   nextLevel: Upgrade
   Level1: Level1
   levelNumber: 1
+  stageText: {fileID: 344346820}
 --- !u!4 &1727613711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4099933265589362, guid: ae97ef7e60fa27e4a9c238b6ee2a619d,
