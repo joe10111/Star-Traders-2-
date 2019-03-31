@@ -31,7 +31,7 @@ public class titlescreen : MonoBehaviour
         if(player.position.y >= 3)
         {
             titleScreen.SetActive(true);
-            if(timer <= 4)
+            if(timer <= 3)
             {
                 title.SetActive(true);
             }

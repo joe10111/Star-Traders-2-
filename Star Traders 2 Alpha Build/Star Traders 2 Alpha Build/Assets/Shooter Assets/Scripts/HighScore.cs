@@ -116,7 +116,7 @@ public class HighScore : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Return))
         {
-            SceneManager.LoadScene("Main Menu");
+            SceneManager.LoadScene("Title Screen");
         }
 
         //Check for High Scores

@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/cente/Desktop/st2 build/32219/Star Traders 2 Early Beta.exe
+C:/Users/Joe/Desktop/Star Traders Builds/Star Traders beta 1/Star Traders 2 Early Beta.exe
 SceneListBegin?
 Assets/Orginal Assets/Levels/Menu/Title Screen.unity
 Assets/Orginal Assets/Levels/Menu/Main Menu.unity
@@ -144,9 +144,10 @@ a1da4bd13bf374841c35d9da790c3e96 Assembly-CSharp.dll:.Upgrades
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 81f7c4494372dd293988604e65ff9994 Assembly-CSharp.dll:.DontDestroyOnLoad
 3a3b779b184dd221818c22e8bacdbe3f Assembly-CSharp.dll:.PowerUp
-d5ee6b749f7a585a6cd168cd53e10650 Assembly-CSharp.dll:.PlayerController
+1b033c79a03473c3ab4a0a91033dcee2 Assembly-CSharp.dll:.PlayerController
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.LevelEnd
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MissleExplostion
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 1dcb82730d983b77cec736c6ef19f814 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -167,7 +168,7 @@ d7494ddff8ed4978f78546ec3a8ef38e Assembly-CSharp.dll:.Health
 9c2738990a6d87b1e79667954fb54cd7 Assembly-CSharp.dll:.MoveHighScoreName
 aa82b3ce4c0c9b227036c0337315c5d3 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 e51c09a4cc447f11db225afcd8e3e490 Unity.TextMeshPro.dll:TMPro.TMP_Settings
-ada00fb82d4d7a5e33b3cc79f565399d Assembly-CSharp.dll:.WaveManager
+b5b50c114cfb41358d0ed51c76fdd14f Assembly-CSharp.dll:.WaveManager
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 cf96e5f7b3d069bab453925bd41be04e UnityEngine.TestRunner.dll:UnityEngine.TestTools.EnumerableSetUpTearDownCommandState
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
@@ -197,4 +198,3 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 1047aee37c28d000ae58531e07328f0d Assembly-CSharp.dll:.playerShot
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MissleExplostion

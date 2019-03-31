@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour {
 
     public Transform shotPoint;
     public Transform shotPoint2;
-    public Transform shotEffectpiont, shotEffectpiont2;
     public Transform misslePoint;
     public GameObject shot;
     public GameObject shot2;
