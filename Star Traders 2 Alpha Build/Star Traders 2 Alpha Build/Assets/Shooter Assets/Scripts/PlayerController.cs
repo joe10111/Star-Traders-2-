@@ -18,10 +18,12 @@ public class PlayerController : MonoBehaviour {
 
     public Transform shotPoint;
     public Transform shotPoint2;
+    public Transform shotEffectpiont, shotEffectpiont2;
     public Transform misslePoint;
     public GameObject shot;
     public GameObject shot2;
     public GameObject missle;
+    public GameObject shotEffect;
 
     public float timeBetweenShots = 0.1f;
     public float missletimeBetweenShots = 2;
@@ -108,7 +110,9 @@ public class PlayerController : MonoBehaviour {
                
             {
                 Instantiate(shot, shotPoint.position, shotPoint.rotation);
+                Instantiate(shotEffect, shotPoint.position, shotEffect.transform.rotation);
                 Instantiate(shot2, shotPoint2.position, shotPoint.rotation);
+                Instantiate(shotEffect, shotPoint2.position, shotEffect.transform.rotation);
                 shotCounter = 0f;
             }
             //Ablitys

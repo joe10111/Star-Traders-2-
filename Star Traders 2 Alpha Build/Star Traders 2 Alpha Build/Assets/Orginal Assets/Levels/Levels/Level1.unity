@@ -4787,5 +4787,38 @@ PrefabInstance:
       propertyPath: topRightlimit
       value: 
       objectReference: {fileID: 1081600222}
+    - target: {fileID: 1621226687135408928, guid: f6102cc47abe9bb42afe66b24bba5dc9,
+        type: 3}
+      propertyPath: shotEffect
+      value: 
+      objectReference: {fileID: 8781751700598818736, guid: d4f309de1984be3489cce182e666176c,
+        type: 3}
+    - target: {fileID: 1621226687135408928, guid: f6102cc47abe9bb42afe66b24bba5dc9,
+        type: 3}
+      propertyPath: missle
+      value: 
+      objectReference: {fileID: 126, guid: 58a447351b3bf8e44890e4a25a298287, type: 3}
+    - target: {fileID: 3037833107079338311, guid: f6102cc47abe9bb42afe66b24bba5dc9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.467
+      objectReference: {fileID: 0}
+    - target: {fileID: 8775596385154671452, guid: f6102cc47abe9bb42afe66b24bba5dc9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.467
+      objectReference: {fileID: 0}
+    - target: {fileID: 962680532873923149, guid: f6102cc47abe9bb42afe66b24bba5dc9,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000,
+        type: 0}
+    - target: {fileID: 9112988155324719676, guid: f6102cc47abe9bb42afe66b24bba5dc9,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6102cc47abe9bb42afe66b24bba5dc9, type: 3}
