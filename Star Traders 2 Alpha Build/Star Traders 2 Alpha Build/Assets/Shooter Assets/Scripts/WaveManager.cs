@@ -26,7 +26,7 @@ public class WaveManager : MonoBehaviour
     public bool medium;
 
     public bool hard;
-    public  int newSize = 12;
+    
 
 
 
@@ -39,32 +39,19 @@ public class WaveManager : MonoBehaviour
     void Start()
     {
        
-        
+
         timeToNextWave = waves[0].timeToSpawn;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (level1 == true)
-        {
-            waves[currentwave].timeToSpawn = 5;
-        }
-        else if (esay == true)
-        {
-            waves[currentwave].timeToSpawn = 3.5f;
-        }
-        else if (medium == true)
-        {
-            waves[currentwave].timeToSpawn = 3;
-        }
-        else if (hard == true)
-        {
-            waves[currentwave].timeToSpawn = 2.5f;
-        }
+        
 
             if (canSpawnWaves)
         {
+           
+
             timeToNextWave -= Time.deltaTime;
             if (timeToNextWave <= 0)
             {
@@ -106,13 +93,28 @@ public class WaveManager : MonoBehaviour
                 if (currentwave < waves.Length - 1)
                     {
                     currentwave++;
-
-                    timeToNextWave = waves[currentwave].timeToSpawn;
-                  }else
+                    if (level1 == true)
                     {
+                        timeToNextWave = 5;
+                    }
+                    else if (esay == true)
+                    {
+                        timeToNextWave = 4f;
+                    }
+                    else if (medium == true)
+                    {
+                        timeToNextWave = 3.5f;
+                    }
+                    else if (hard == true)
+                    {
+                        timeToNextWave = 3f;
+                    }
+                    
+                }else
+                {
                     canSpawnWaves = false;
                     StartCoroutine(LevelEnd());
-                   }
+                 }
             }
         }
     }

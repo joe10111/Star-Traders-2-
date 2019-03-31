@@ -99,42 +99,54 @@ public class GameManager : MonoBehaviour
         {
            
             stageText.text = "STAGE THREE";
-            WaveManager.instance.esay = false;
-            WaveManager.instance.medium = true;
+           
         }
         if (levelNumber == 4)
         {
+           
             stageText.text = "STAGE FOUR";
         }
+        
         if (levelNumber == 5)
         {
-            stageText.text = "STAGE FIVE";
             WaveManager.instance.esay = false;
-            WaveManager.instance.medium = false;
-            WaveManager.instance.hard = true;
+            WaveManager.instance.medium = true;
+            stageText.text = "STAGE FIVE";
+            
         }
         if (levelNumber == 6)
         {
+            WaveManager.instance.esay = false;
+            WaveManager.instance.medium = true;
             stageText.text = "STAGE SIX";
         }
         if (levelNumber == 7)
         {
+            WaveManager.instance.esay = false;
+            WaveManager.instance.medium = true;
             stageText.text = "STAGE SEVEN";
         }
         if (levelNumber == 8)
         {
+            WaveManager.instance.esay = false;
+            WaveManager.instance.medium = true;
             stageText.text = "STAGE EIGHT";
         }
         if (levelNumber == 9)
         {
+            WaveManager.instance.esay = false;
+            WaveManager.instance.medium = true;
             stageText.text = "STAGE NINE";
         }
         if (levelNumber == 10)
         {
             stageText.text = "STAGE TEN";
         }
-        if (levelNumber > 10)
+        if (levelNumber >= 11)
         {
+            WaveManager.instance.esay = false;
+            WaveManager.instance.medium = false;
+            WaveManager.instance.hard = true;
             stageText.text = "GALAXYS EDGE";
         }
         if (Input.GetKeyDown(KeyCode.Space))
