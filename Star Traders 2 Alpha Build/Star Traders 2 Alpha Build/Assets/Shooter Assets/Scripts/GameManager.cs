@@ -59,7 +59,6 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("CurrentScore", 0);
             PlayerPrefs.SetFloat("UpFireRate", .6f);
             PlayerPrefs.SetFloat("SpeedUp", 7);
-            PlayerPrefs.SetInt("HealthUp", 3);
             PlayerPrefs.SetInt("LevelNumber", 1);
         }
 
@@ -69,7 +68,6 @@ public class GameManager : MonoBehaviour
         //FireRate
         PlayerController.instance.timeBetweenShots = PlayerPrefs.GetFloat("UpFireRate");
         //Health
-        Health.instance.maxHealth = PlayerPrefs.GetInt("HealthUp");
         Health.instance.currentHealth = Health.instance.maxHealth;
         UIManager.instance.healthBar.maxValue = Health.instance.maxHealth;
         UIManager.instance.healthBar.value = Health.instance.currentHealth;

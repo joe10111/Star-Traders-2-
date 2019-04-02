@@ -14,22 +14,16 @@ public class EnemyShot : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("PlayerShotBox").transform;
 
-        target = new Vector2(player.position.x, player.position.y);
+      
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(trackingShot == true)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, target, shotSpeed * Time.deltaTime);
-        }
-        else
-        {
+       
             transform.position -= new Vector3(0f, shotSpeed * Time.deltaTime, 0f);
-        }
+       
             
        
       

@@ -39,13 +39,15 @@ public class PlayerController : MonoBehaviour {
 
     public GameObject eShot;
 
+    public float sheildTimer = 0;
+
     public bool Civ = true;
     public bool Class1 = false;
     public bool Class2 = false;
     public bool Class3 = false;
+    public SpriteRenderer theSR2;
 
-  
-
+    
 
     // public bool dashReady = false;
     // private float dashCounter;
@@ -116,7 +118,9 @@ public class PlayerController : MonoBehaviour {
             }
             //Ablitys
             //Shield
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            sheildTimer += Time.deltaTime;
+            UIManager.instance.shieldBar.value = sheildTimer;
+            if (Input.GetKeyDown(KeyCode.Alpha1) && sheildTimer >= 10)
             {
                 Health.instance.ActivateShield();
             }
@@ -125,6 +129,7 @@ public class PlayerController : MonoBehaviour {
             {
                 ActivateSpeedBoost();
             }
+           
             if (Input.GetKeyDown(KeyCode.Alpha3) && missleshotCounter >= missletimeBetweenShots)
             {
                 Instantiate(missle, misslePoint.position, misslePoint.rotation);

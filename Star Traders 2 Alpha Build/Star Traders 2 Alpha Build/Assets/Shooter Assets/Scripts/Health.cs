@@ -16,6 +16,7 @@ public class Health : MonoBehaviour
     public float invincibleLength = 2f;
     private float invincCounter;
     public SpriteRenderer theSR;
+    
 
     public float shieldPwr;
     public float shieldMaxPwr = 20;
@@ -45,10 +46,12 @@ public class Health : MonoBehaviour
         if (theShield.activeInHierarchy)
         {
             shieldPwr -= Time.deltaTime;
+            
 
             if (shieldPwr <= 0)
             {
                 theShield.SetActive(false);
+                PlayerController.instance.sheildTimer = 0;
             }
             UIManager.instance.shieldBar.value = shieldPwr;
         }

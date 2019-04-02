@@ -24,6 +24,8 @@ public class UIManager : MonoBehaviour
 
     public GameObject highscoreNotice;
 
+    public Image MissleIcon;
+
 
  
 

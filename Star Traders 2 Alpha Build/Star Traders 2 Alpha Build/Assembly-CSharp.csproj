@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\DontDestroyOnLoad.cs" />
      <Compile Include="Assets\InGameVolumeSlider.cs" />
+     <Compile Include="Assets\New BackGround\Scripts\BackgroundScrollScript.cs" />
      <Compile Include="Assets\Options.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\BackgroundScroller.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\CameraShake.cs" />
