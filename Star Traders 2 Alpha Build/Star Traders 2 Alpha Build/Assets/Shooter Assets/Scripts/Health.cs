@@ -43,8 +43,13 @@ public class Health : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (theShield.activeInHierarchy)
+        if (!theShield.activeInHierarchy)
         {
+            UIManager.instance.shieldBar.value = PlayerController.instance.sheildTimer;
+        }
+            if (theShield.activeInHierarchy)
+        {
+            UIManager.instance.shieldBar.value = shieldPwr;
             shieldPwr -= Time.deltaTime;
             
 
@@ -53,7 +58,7 @@ public class Health : MonoBehaviour
                 theShield.SetActive(false);
                 PlayerController.instance.sheildTimer = 0;
             }
-            UIManager.instance.shieldBar.value = shieldPwr;
+            
         }
         if (invincCounter >= 0)
         {
@@ -72,6 +77,7 @@ public class Health : MonoBehaviour
         {
             if (!theShield.activeInHierarchy)
             {
+               
                 //docing the health if player gets hurt
                 currentHealth--;
                 UIManager.instance.healthBar.value = currentHealth;

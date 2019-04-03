@@ -14,7 +14,7 @@ public class UIManager : MonoBehaviour
 
     public Text livesText;
 
-    public Slider healthBar, shieldBar;
+    public Slider healthBar, shieldBar, missleBar, dodgeBar;
 
     public Text scoreText, highScoreText;
 

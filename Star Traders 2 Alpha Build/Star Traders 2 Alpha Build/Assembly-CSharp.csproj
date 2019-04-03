@@ -62,6 +62,7 @@
      <Compile Include="Assets\Shooter Assets\Scripts\DamagePlayer.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\DestroyOverTime.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\EnemyController.cs" />
+     <Compile Include="Assets\Shooter Assets\Scripts\EnemyController1.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\EnemyShot.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\EnemyWave.cs" />
      <Compile Include="Assets\Shooter Assets\Scripts\GameManager.cs" />

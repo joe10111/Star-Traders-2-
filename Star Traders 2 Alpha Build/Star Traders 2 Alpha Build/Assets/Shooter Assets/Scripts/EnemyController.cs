@@ -60,7 +60,7 @@ public class EnemyController : MonoBehaviour
             transform.position += new Vector3(startDirection.x * moveSpeed * Time.deltaTime, startDirection.y * moveSpeed * Time.deltaTime, 0f);
         } else
         {
-            if (transform.position.y > changeDirectionXpoint && changedDir2 == true)
+            if (transform.position.y > changeDirectionXpoint)
             {
                 transform.position += new Vector3(startDirection.x * moveSpeed * Time.deltaTime, startDirection.y * moveSpeed * Time.deltaTime, 0f);
             } else

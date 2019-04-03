@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour {
 
     private float shotCounter;
     private float missleshotCounter;
+    private float dodgeCounter;
 
     private float normalSpeed;
     public float boostSpeed;
@@ -86,7 +87,8 @@ public class PlayerController : MonoBehaviour {
 
             shotCounter += Time.deltaTime;
             missleshotCounter += Time.deltaTime;
-            print(missleshotCounter);
+            dodgeCounter += Time.deltaTime;
+            
             
                 // dashCounter += Time.deltaTime;
 
@@ -119,17 +121,20 @@ public class PlayerController : MonoBehaviour {
             //Ablitys
             //Shield
             sheildTimer += Time.deltaTime;
-            UIManager.instance.shieldBar.value = sheildTimer;
+            
+            
             if (Input.GetKeyDown(KeyCode.Alpha1) && sheildTimer >= 10)
             {
                 Health.instance.ActivateShield();
             }
+            UIManager.instance.dodgeBar.value = dodgeCounter;
             //Abillity 2
-            if (Input.GetKeyDown(KeyCode.Alpha2))
+            if (Input.GetKeyDown(KeyCode.Alpha2) && dodgeCounter >= 5)
             {
                 ActivateSpeedBoost();
+                dodgeCounter = 0;
             }
-           
+            UIManager.instance.missleBar.value = missleshotCounter;
             if (Input.GetKeyDown(KeyCode.Alpha3) && missleshotCounter >= missletimeBetweenShots)
             {
                 Instantiate(missle, misslePoint.position, misslePoint.rotation);
