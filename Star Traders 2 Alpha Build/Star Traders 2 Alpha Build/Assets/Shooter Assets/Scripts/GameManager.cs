@@ -66,6 +66,7 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetFloat("UpFireRate", .6f);
             PlayerPrefs.SetFloat("SpeedUp", 7);
             PlayerPrefs.SetInt("LevelNumber", 1);
+            PlayerPrefs.SetInt("NumberOfCoins", 0);
         }
 
 
@@ -87,7 +88,8 @@ public class GameManager : MonoBehaviour
         UIManager.instance.livesText.text = "X " + currentLives;
 
 
-
+        amountOfCredits = PlayerPrefs.GetInt("NumberOfCoins");
+        
 
         highScore = PlayerPrefs.GetInt("HighSCORE");
         UIManager.instance.highScoreText.text = "HI-SCORE: " + highScore;
@@ -99,7 +101,14 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+        UIManager.instance.coinText.text = "X " + amountOfCredits;
+        if (levelNumber == 2)
+        {
+
+            stageText.text = "STAGE TWO";
+
+        }
+
         if (levelNumber == 3)
         {
            
@@ -268,6 +277,7 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("LevelNumber", levelNumber);
             PlayerPrefs.SetInt("HighSCORE", highScore);
             PlayerPrefs.SetInt("CurrentLives", currentLives);
+            PlayerPrefs.SetInt("NumberOfCoins", amountOfCredits);
 
             yield return new WaitForSeconds(waitForLevelEnd);
 

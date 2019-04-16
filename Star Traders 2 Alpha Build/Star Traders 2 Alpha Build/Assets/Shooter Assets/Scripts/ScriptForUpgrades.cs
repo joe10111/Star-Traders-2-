@@ -106,7 +106,7 @@ public class ScriptForUpgrades : MonoBehaviour
 
 
 
-        coinsValue = PlayerPrefs.GetInt("coins");
+        coinsValue = PlayerPrefs.GetInt("NumberOfCoins");
         coinsValue = 200;
 
         coinsDisplay.text = "" + coinsValue;

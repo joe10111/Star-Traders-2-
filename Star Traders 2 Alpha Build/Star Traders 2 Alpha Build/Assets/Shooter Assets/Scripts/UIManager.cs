@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
 
     public GameObject gameOverAndNewHighscore;
 
-    public Text livesText;
+    public Text livesText, coinText;
 
     public Slider healthBar, shieldBar, missleBar, dodgeBar;
 
