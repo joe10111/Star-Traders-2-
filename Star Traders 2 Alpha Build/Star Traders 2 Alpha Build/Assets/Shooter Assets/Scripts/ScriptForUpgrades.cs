@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ScriptForUpgrades : MonoBehaviour
@@ -94,10 +95,8 @@ public class ScriptForUpgrades : MonoBehaviour
         ug54.SetActive(false);
         ug55.SetActive(false);
 
-        playerSpeed = 100f;
-
         coinsValue = PlayerPrefs.GetInt("coins");
-        coinsValue = 250;
+        coinsValue = 200;
 
         coinsDisplay.text = "" + coinsValue;
     }
@@ -105,7 +104,10 @@ public class ScriptForUpgrades : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            SceneManager.LoadScene("Level2");
+        }
     }
 
     public void ButtonSelect1()
@@ -307,6 +309,7 @@ public class ScriptForUpgrades : MonoBehaviour
         }
         if (fug41 == true && fug42 == true && fug43 == true && fug44 == true && fug45 == false && coinsValue >= upgradeCost4)
         {
+            StartCoroutine(PlayerController.instance.UpFireRate());
             ug45.SetActive(true);
             fug45 = true;
 
@@ -317,6 +320,7 @@ public class ScriptForUpgrades : MonoBehaviour
         }
         if (fug41 == true && fug42 == true && fug43 == true && fug44 == false && coinsValue >= upgradeCost4)
         {
+            StartCoroutine(PlayerController.instance.UpFireRate());
             ug44.SetActive(true);
             fug44 = true;
 
@@ -327,6 +331,7 @@ public class ScriptForUpgrades : MonoBehaviour
         }
         if (fug41 == true && fug42 == true && fug43 == false && fug44 == false && coinsValue >= upgradeCost4)
         {
+            StartCoroutine(PlayerController.instance.UpFireRate());
             ug43.SetActive(true);
             fug43 = true;
 
@@ -336,6 +341,7 @@ public class ScriptForUpgrades : MonoBehaviour
         }
         if (fug31 == true && fug32 == false && fug33 == false && fug34 == false && coinsValue >= upgradeCost4)
         {
+            StartCoroutine(PlayerController.instance.UpFireRate());
             ug42.SetActive(true);
             fug42 = true;
 
@@ -348,7 +354,7 @@ public class ScriptForUpgrades : MonoBehaviour
             fug41 = true;
             ug41.SetActive(true);
 
-            playerSpeed += 10;
+            StartCoroutine(PlayerController.instance.UpFireRate());
 
             coinsValue -= 100;
             UpdateText();
@@ -369,6 +375,7 @@ public class ScriptForUpgrades : MonoBehaviour
         }
         if (fug51 == true && fug52 == true && fug53 == true && fug54 == true && fug55 == false && coinsValue >= upgradeCost5)
         {
+            StartCoroutine(PlayerController.instance.SpeedUp());
             ug55.SetActive(true);
             fug55 = true;
 
@@ -379,6 +386,7 @@ public class ScriptForUpgrades : MonoBehaviour
         }
         if (fug51 == true && fug52 == true && fug53 == true && fug54 == false && coinsValue >= upgradeCost5)
         {
+            StartCoroutine(PlayerController.instance.SpeedUp());
             ug54.SetActive(true);
             fug54 = true;
 
@@ -389,6 +397,7 @@ public class ScriptForUpgrades : MonoBehaviour
         }
         if (fug51 == true && fug52 == true && fug53 == false && fug54 == false && coinsValue >= upgradeCost5)
         {
+            StartCoroutine(PlayerController.instance.SpeedUp());
             ug53.SetActive(true);
             fug53 = true;
 
@@ -398,6 +407,7 @@ public class ScriptForUpgrades : MonoBehaviour
         }
         if (fug51 == true && fug52 == false && fug53 == false && fug54 == false && coinsValue >= upgradeCost5)
         {
+            StartCoroutine(PlayerController.instance.SpeedUp());
             ug52.SetActive(true);
             fug52 = true;
 
@@ -407,6 +417,7 @@ public class ScriptForUpgrades : MonoBehaviour
         }
         if (fug51 == false && coinsValue >= upgradeCost5)
         {
+            StartCoroutine(PlayerController.instance.SpeedUp());
             fug51 = true;
             ug51.SetActive(true);
 

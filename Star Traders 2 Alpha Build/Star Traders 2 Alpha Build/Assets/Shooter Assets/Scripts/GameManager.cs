@@ -33,6 +33,9 @@ public class GameManager : MonoBehaviour
     public AudioClip coinSound;
     public int amountOfCredits;
 
+  
+
+
     private void Awake()
     {
         instance = this;
@@ -40,6 +43,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+     
+        
+
         source = GetComponent<AudioSource>();
 
         Scene currentScence = SceneManager.GetActiveScene();
@@ -93,6 +99,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        
         if (levelNumber == 3)
         {
            
@@ -229,7 +236,7 @@ public class GameManager : MonoBehaviour
     {
         float vol = Random.Range(.5f, 1);
         source.PlayOneShot(coinSound, vol);
-        amountOfCredits++;
+        amountOfCredits += 100;
         print("Coin Colleted");
     }
 

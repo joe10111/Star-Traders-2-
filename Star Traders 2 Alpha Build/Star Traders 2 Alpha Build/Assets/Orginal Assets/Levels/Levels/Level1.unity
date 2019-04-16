@@ -4168,7 +4168,7 @@ MonoBehaviour:
   currentScore: 0
   levelEnding: 0
   waitForLevelEnd: 5
-  nextLevel: Upgrade
+  nextLevel: Shop System
   Level1: Level1
   levelNumber: 1
   stageText: {fileID: 0}

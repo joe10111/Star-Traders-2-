@@ -48,7 +48,9 @@ public class PlayerController : MonoBehaviour {
     public bool Class3 = false;
     public SpriteRenderer theSR2;
 
-    
+    public bool sheildActive = false;
+    public bool dodgeActive = false;
+    public bool missleActive = false; 
 
     // public bool dashReady = false;
     // private float dashCounter;
@@ -121,15 +123,14 @@ public class PlayerController : MonoBehaviour {
             //Ablitys
             //Shield
             sheildTimer += Time.deltaTime;
-            
-            
-            if (Input.GetKeyDown(KeyCode.Alpha1) && sheildTimer >= 10)
+ 
+            if (Input.GetKeyDown(KeyCode.Alpha1) && sheildTimer >= 10 && sheildActive == true)
             {
                 Health.instance.ActivateShield();
             }
             UIManager.instance.dodgeBar.value = dodgeCounter;
-            //Abillity 2
-            if (Input.GetKeyDown(KeyCode.Alpha2) && dodgeCounter >= 5)
+            //dodge 
+            if (Input.GetKeyDown(KeyCode.Alpha2) && dodgeCounter >= 5 && dodgeActive == true)
             {
                 ActivateSpeedBoost();
                 dodgeCounter = 0;
@@ -141,7 +142,6 @@ public class PlayerController : MonoBehaviour {
                 missleshotCounter = 0f;
                 
             }
-            //Ablitys
             if (boostCounter > 0)
             {
                 boostCounter -= Time.deltaTime;
