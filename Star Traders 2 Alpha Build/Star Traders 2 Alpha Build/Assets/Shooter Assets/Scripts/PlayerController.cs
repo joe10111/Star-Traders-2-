@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour {
     public Rigidbody2D theRB;
     public Animator animator;
 
+    public string Level2 = "Level2";
+
     private IEnumerator coroutine;
 
 
@@ -48,9 +50,7 @@ public class PlayerController : MonoBehaviour {
     public bool Class3 = false;
     public SpriteRenderer theSR2;
 
-    public bool sheildActive = false;
-    public bool dodgeActive = false;
-    public bool missleActive = false; 
+    
 
     // public bool dashReady = false;
     // private float dashCounter;
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-      
+     
 
         if (!stopMovement)
         {
@@ -124,13 +124,13 @@ public class PlayerController : MonoBehaviour {
             //Shield
             sheildTimer += Time.deltaTime;
  
-            if (Input.GetKeyDown(KeyCode.Alpha1) && sheildTimer >= 10 && sheildActive == true)
+            if (Input.GetKeyDown(KeyCode.Alpha1) && sheildTimer >= 10 && ScriptForUpgrades.instance.sheildActive == true)
             {
                 Health.instance.ActivateShield();
             }
             UIManager.instance.dodgeBar.value = dodgeCounter;
             //dodge 
-            if (Input.GetKeyDown(KeyCode.Alpha2) && dodgeCounter >= 5 && dodgeActive == true)
+            if (Input.GetKeyDown(KeyCode.Alpha2) && dodgeCounter >= 5 && ScriptForUpgrades.instance.dodgeActive == true)
             {
                 ActivateSpeedBoost();
                 dodgeCounter = 0;
@@ -154,6 +154,36 @@ public class PlayerController : MonoBehaviour {
         else
         {
             theRB.velocity = Vector2.zero;
+        }
+
+        Scene currentScence = SceneManager.GetActiveScene();
+        string scenceName = currentScence.name;
+        if (scenceName == Level2)
+        {
+            if (ScriptForUpgrades.instance.sheildActive == true)
+            {
+                UIManager.instance.shieldSlider.SetActive(true);
+            }
+            else
+            {
+                UIManager.instance.shieldSlider.SetActive(false);
+            }
+            if (ScriptForUpgrades.instance.dodgeActive == true)
+            {
+                UIManager.instance.dodgeSlider.SetActive(true);
+            }
+            else
+            {
+                UIManager.instance.dodgeSlider.SetActive(false);
+            }
+            if (ScriptForUpgrades.instance.missleActive == true)
+            {
+                UIManager.instance.missleSlider.SetActive(true);
+            }
+            else
+            {
+                UIManager.instance.missleSlider.SetActive(false);
+            }
         }
     }
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ScriptForUpgrades : MonoBehaviour
 {
-   
+    public static ScriptForUpgrades instance;
 
     public GameObject ug11, ug12, ug13, ug14, ug15;
     public GameObject ug21, ug22, ug23, ug24, ug25;
@@ -39,6 +39,15 @@ public class ScriptForUpgrades : MonoBehaviour
     public int upgradeCost5 = 100;
 
     public float playerSpeed;
+
+    public bool sheildActive = false;
+    public bool dodgeActive = false;
+    public bool missleActive = false;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -94,6 +103,8 @@ public class ScriptForUpgrades : MonoBehaviour
         ug53.SetActive(false);
         ug54.SetActive(false);
         ug55.SetActive(false);
+
+
 
         coinsValue = PlayerPrefs.GetInt("coins");
         coinsValue = 200;
@@ -163,9 +174,7 @@ public class ScriptForUpgrades : MonoBehaviour
         {
             fug11 = true;
             ug11.SetActive(true);
-
-            playerSpeed += 10;
-
+            missleActive = true;
             coinsValue -= 100;
             UpdateText();
             StartCoroutine(jesus1());
@@ -225,9 +234,7 @@ public class ScriptForUpgrades : MonoBehaviour
         {
             fug21 = true;
             ug21.SetActive(true);
-
-            playerSpeed += 10;
-
+            sheildActive = true;
             coinsValue -= 100;
             UpdateText();
             StartCoroutine(jesus1());
@@ -287,9 +294,7 @@ public class ScriptForUpgrades : MonoBehaviour
         {
             fug31 = true;
             ug31.SetActive(true);
-
-            playerSpeed += 10;
-
+            dodgeActive = true;
             coinsValue -= 100;
             UpdateText();
             StartCoroutine(jesus1());

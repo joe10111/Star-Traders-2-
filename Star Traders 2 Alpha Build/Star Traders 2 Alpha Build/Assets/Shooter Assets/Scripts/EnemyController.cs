@@ -112,7 +112,7 @@ public class EnemyController : MonoBehaviour
             int randomChance = Random.Range(0, 100);
              if(randomChance < dropSuccessRate)
              {
-                int randomPick = Random.Range(0, coinDrop.Length);
+                int randomPick = Random.Range(0, 1);
                 Instantiate(coinDrop[randomPick], transform.position, transform.rotation);
              }
             CameraShake.instance.shakeAmount = .07f;

@@ -4604,6 +4604,9 @@ MonoBehaviour:
   endCurrentScore: {fileID: 2257354}
   highscoreNotice: {fileID: 196680685}
   MissleIcon: {fileID: 0}
+  shieldSlider: {fileID: 1739715834}
+  missleSlider: {fileID: 1978305514}
+  dodgeSlider: {fileID: 1613909829}
 --- !u!114 &1828478044
 MonoBehaviour:
   m_ObjectHideFlags: 0

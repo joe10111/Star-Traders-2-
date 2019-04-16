@@ -26,6 +26,7 @@ public class UIManager : MonoBehaviour
 
     public Image MissleIcon;
 
+     public GameObject shieldSlider, missleSlider, dodgeSlider;
 
  
 
