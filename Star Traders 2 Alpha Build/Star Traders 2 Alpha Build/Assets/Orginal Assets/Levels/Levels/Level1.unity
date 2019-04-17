@@ -1138,12 +1138,21 @@ MonoBehaviour:
   timeToNextWave: 3
   canSpawnWaves: 1
   waveType:
-  - {fileID: 109122111, guid: e4d2ec58923878a4f9926bc79efa9caa, type: 3}
-  - {fileID: 228578934, guid: be8b1523a36ecf64cad3939c181f90c3, type: 3}
   - {fileID: 1482241225, guid: 8bfea8e5f3096dc4ea5ac9e4c696e4f4, type: 3}
   - {fileID: 943414457, guid: b71c8ba9f56ad96479f0da26091d50ab, type: 3}
   - {fileID: 255906287, guid: e08f21fcf462ec24d865be02d1f835e2, type: 3}
   - {fileID: 2073156129, guid: f754cc461c21bce49adb3c313dbd2b75, type: 3}
+  - {fileID: 8830072039090615110, guid: 7142b0084adf5fa459a7050369ace058, type: 3}
+  - {fileID: 8984475624983007268, guid: 777413531cf40894caeb84f20ea722d5, type: 3}
+  - {fileID: 1725178534, guid: e5514c78025c5ba4a8c1128d4570ef4c, type: 3}
+  - {fileID: 1725178534, guid: bb9d96f8ce63fee4895f5b0fc4662005, type: 3}
+  - {fileID: 1725178534, guid: 5e42b03852794ae4ca9f18de4e9c9a1f, type: 3}
+  - {fileID: 1725178534, guid: 2283f1ac2d67b07409d8b608b992204b, type: 3}
+  - {fileID: 109122111, guid: e4d2ec58923878a4f9926bc79efa9caa, type: 3}
+  - {fileID: 228578934, guid: be8b1523a36ecf64cad3939c181f90c3, type: 3}
+  - {fileID: 1668020099, guid: 8b05acb79efbb7d4eadc724bf566f89e, type: 3}
+  - {fileID: 1668020099, guid: bea91260a75e53d4e915c4efe9934cd7, type: 3}
+  - {fileID: 1668020099, guid: 0f673769b4b250c4491e3f9895875aa3, type: 3}
   endWave: {fileID: 1333111272, guid: 66755bd2bdfc7d34699cca0ca224fbe0, type: 3}
   endWaveTransform: {fileID: 1053050631}
   level1: 1
@@ -2134,7 +2143,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707160529}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.1, y: 12.369904, z: 0.5610811}
+  m_LocalPosition: {x: 5.69, y: 12.369904, z: 0.5610811}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1515087236}
@@ -3919,7 +3928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1513637087
 Transform:
   m_ObjectHideFlags: 0
@@ -4627,6 +4636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1747316025}
   - component: {fileID: 1747316024}
+  - component: {fileID: 1747316023}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -4634,6 +4644,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1747316023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747316022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6be6aa72a1278c48a0f89506fa7c778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Level1: Level2
 --- !u!82 &1747316024
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4645,7 +4668,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: fa44bba1a229bad4796cf26e206c7090,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: eb78bc1d4a984c441af5500f525ebe44, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 54a0bb8a28037c44f8a9e5a91d96c99b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5751,7 +5774,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082472500}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.3, y: 12.369904, z: 0.5610811}
+  m_LocalPosition: {x: 9.68, y: 12.369904, z: 0.5610811}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1515087236}
