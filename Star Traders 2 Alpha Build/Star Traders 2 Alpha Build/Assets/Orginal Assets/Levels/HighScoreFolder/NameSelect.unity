@@ -7881,6 +7881,7 @@ GameObject:
   - component: {fileID: 851264040}
   - component: {fileID: 851264042}
   - component: {fileID: 851264041}
+  - component: {fileID: 851264043}
   m_Layer: 5
   m_Name: D
   m_TagString: Untagged
@@ -7949,6 +7950,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851264039}
   m_CullTransparentMesh: 0
+--- !u!114 &851264043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851264039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0.16983178, b: 0.8962264, a: 0.5}
+  m_EffectDistance: {x: 4, y: -4}
+  m_UseGraphicAlpha: 1
 --- !u!1 &851764560
 GameObject:
   m_ObjectHideFlags: 0
@@ -10680,7 +10696,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 81030abf674a65f47b07f0e74e1251c9, type: 3}
-  m_Color: {r: 0.4904397, g: 1, b: 0.48584908, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14367,7 +14383,7 @@ MonoBehaviour:
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
   m_CancelButton: Cancel
-  m_InputActionsPerSecond: 9.7
+  m_InputActionsPerSecond: 9.8
   m_RepeatDelay: 0.1
   m_ForceModuleActive: 0
 --- !u!114 &1483905392
@@ -17660,7 +17676,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 81030abf674a65f47b07f0e74e1251c9, type: 3}
-  m_Color: {r: 1, g: 0.4575472, b: 0.4575472, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

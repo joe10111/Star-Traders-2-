@@ -46,7 +46,7 @@ public class MoveTextOne: MonoBehaviour
     {
         if (firstMove == true)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && firstst.transform.position.y > -0.5)
+            if (Input.GetKey(KeyCode.W) && firstst.transform.position.y > -0.5)
             {
                 if (scrollDown <= 0)
                 {
@@ -55,7 +55,7 @@ public class MoveTextOne: MonoBehaviour
                 }
                 scrollDown -= Time.deltaTime;
             }
-            if (Input.GetKey(KeyCode.DownArrow) && firstst.transform.position.y < 20.5)
+            if (Input.GetKey(KeyCode.S) && firstst.transform.position.y < 20.5)
             {
                 if (scrollDown <= 0)
                 {
@@ -64,7 +64,7 @@ public class MoveTextOne: MonoBehaviour
                 }
                 scrollDown -= Time.deltaTime;
             }
-            if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+            if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S))
             {
                 scrollDown = 0;
             }
@@ -74,7 +74,7 @@ public class MoveTextOne: MonoBehaviour
 
         if (secondMove == true)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && secondObj.transform.position.y > -0.5)
+            if (Input.GetKey(KeyCode.W) && secondObj.transform.position.y > -0.5)
             {
                 if (scrollDown <= 0)
                 {
@@ -83,7 +83,7 @@ public class MoveTextOne: MonoBehaviour
                 }
                 scrollDown -= Time.deltaTime;
             }
-            if (Input.GetKey(KeyCode.DownArrow) && secondObj.transform.position.y < 20.5)
+            if (Input.GetKey(KeyCode.S) && secondObj.transform.position.y < 20.5)
             {
                 if (scrollDown <= 0)
                 {
@@ -92,7 +92,7 @@ public class MoveTextOne: MonoBehaviour
                 }
                 scrollDown -= Time.deltaTime;
             }
-            if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+            if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S))
             {
                 scrollDown = 0;
             }
@@ -101,7 +101,7 @@ public class MoveTextOne: MonoBehaviour
 
         if (thirdMove == true)
         {
-            if (Input.GetKey(KeyCode.UpArrow) && thirdObj.transform.position.y > -0.5)
+            if (Input.GetKey(KeyCode.W) && thirdObj.transform.position.y > -0.5)
             {
                 if (scrollDown <= 0)
                 {
@@ -110,7 +110,7 @@ public class MoveTextOne: MonoBehaviour
                 }
                 scrollDown -= Time.deltaTime;
             }
-            if (Input.GetKey(KeyCode.DownArrow) && thirdObj.transform.position.y < 20.5)
+            if (Input.GetKey(KeyCode.S) && thirdObj.transform.position.y < 20.5)
             {
                 if (scrollDown <= 0)
                 {
@@ -119,19 +119,19 @@ public class MoveTextOne: MonoBehaviour
                 }
                 scrollDown -= Time.deltaTime;
             }
-            if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+            if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S))
             {
                 scrollDown = 0;
             }
             box.transform.position = new Vector3(boxMove, 0, 0);
         }
 
-        if(firstMove ==false && secondMove==false && thirdMove==false && Input.GetKeyDown(KeyCode.Return))
+        if(firstMove ==false && secondMove==false && thirdMove==false && Input.GetKeyDown(KeyCode.G))
         {
             SceneManager.LoadScene("HighScores");
         }
 
-        if(Input.GetKeyDown(KeyCode.Backspace))
+        if(Input.GetKeyDown(KeyCode.Mouse1))
         {
             firstst.transform.position = firstPosition;
             secondObj.transform.position = secondPosition;
@@ -142,6 +142,7 @@ public class MoveTextOne: MonoBehaviour
             thirdMove = false;
 
             reset.Select();
+
         }
 
     }
