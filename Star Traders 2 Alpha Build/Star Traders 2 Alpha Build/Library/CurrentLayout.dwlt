@@ -113,10 +113,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 913, y: 448}
-  m_MaxSize: {x: 22008, y: 10024}
+  m_MinSize: {x: 917, y: 448}
+  m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
-  controlID: 4025
+  controlID: 51
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 4106
+  controlID: 85
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,8 +161,8 @@ MonoBehaviour:
     y: 0
     width: 408
     height: 297
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -215,8 +215,8 @@ MonoBehaviour:
     y: 0
     width: 290
     height: 947
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -270,10 +270,10 @@ MonoBehaviour:
     y: 0
     width: 562
     height: 947
-  m_MinSize: {x: 277, y: 174}
-  m_MaxSize: {x: 4002, y: 8024}
+  m_MinSize: {x: 277, y: 198}
+  m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 4082
+  controlID: 52
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -320,8 +320,8 @@ MonoBehaviour:
     y: 549
     width: 562
     height: 398
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 124}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -438,9 +438,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.4046148, y: -1.8241765, z: -0.33475175}
+    m_Target: {x: 0.1283668, y: -3.2398508, z: 22.220484}
     speed: 2
-    m_Value: {x: -0.4046148, y: -1.8241765, z: -0.33475175}
+    m_Value: {x: 0.1283668, y: -3.2398508, z: 22.220484}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -472,9 +472,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.821598
+    m_Target: 4.995211
     speed: 2
-    m_Value: 7.821598
+    m_Value: 4.995211
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -656,23 +656,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 2e0f0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 609bffff709bffff809bffff9aa2ffffaaa2ffff6aa3ffffdca3ffffb0a5ffff70acffff0eb1ffff74b7ffff7eb7ffff9abaffffacbaffffacc0ffff1cc1ffff16caffff26caffff36caffff46caffffc4caffffd4caffffa2ceffff2ad2ffff5ed2ffff70d2ffffd4d3ffffe8d3ffffd4d4ffffa8d9ffff80dcffff603e000078400000e04600002e470000c45200001053000074550000945500004c5b00005e5b00009a5b0000b8670000a8690000f86900008a6c0000f4ad000014af0000b6c40000f2c4000040c5000092d2000042d3000070d30000a8d30000f8e2000018e60000d2f0000038f100003ef1000034fa0000da020100fa0201000a0301001a0301002603010032030100620301008203010068250100
+      m_ExpandedIDs: 8cc0ffff9cc0ffffacc0ffffbcc0ffff5cc1ffff52d1ffff62d1ffffe6d8ffff26d9ffff7ee5ffffc4e5ffffeee5ffff38ebffff4af9ffffdef9ffff92faffffeafaffffd4fbfffff4ffffff5635000052390000a0390000d8400000f84000001841000060410000fa45000048460000ae460000ce46000016470000364700006647000086470000a6470000ee4700005e4c0000744c00000e4d00008a4d0000304e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: EventSystem
+        m_OriginalName: EventSystem
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 18168
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -720,11 +720,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Shooter Assets/Scripts
+    - Assets/Orginal Assets/Levels/Shop
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Shooter Assets/Scripts
+  - Assets/Orginal Assets/Levels/Shop
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Kolton\Documents\GitHub\Star-Traders-2-\Star Traders
     2 Alpha Build\Star Traders 2 Alpha Build
@@ -732,23 +732,23 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b03c0000
-    m_LastClickedID: 15536
-    m_ExpandedIDs: 00000000ac3a0000003b0000223b0000ba3b0000e03b00005e3c0000a83c0000ae3c0000323d00005c3d0000623d0000b83d0000223e000000ca9a3b
+    m_SelectedIDs: 5e0e0000
+    m_LastClickedID: 3678
+    m_ExpandedIDs: 00000000380a0000ee0a0000240b0000320c0000680c0000600d0000bc0d0000cc0d0000a80e0000f00e00000c0f0000700f00001210000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Menu
-      m_OriginalName: Menu
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 15120
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -762,7 +762,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ac3a0000003b0000223b0000ba3b0000e03b00005e3c0000a83c0000ae3c0000323d00005c3d0000623d0000b83d0000223e000000ca9a3b
+    m_ExpandedIDs: 00000000380a0000ee0a0000240b0000320c0000680c0000600d0000bc0d0000cc0d0000a80e0000f00e00000c0f0000700f000012100000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -845,7 +845,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 53922
+  m_LastSelectedObjectID: 20026
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52

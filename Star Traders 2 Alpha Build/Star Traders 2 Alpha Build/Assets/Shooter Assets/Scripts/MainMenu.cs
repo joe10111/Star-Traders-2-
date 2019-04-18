@@ -23,4 +23,8 @@ public class MainMenu : MonoBehaviour
         Debug.Log("quit");
         Application.Quit();
     }
+    public void HighScores ()
+    {
+        SceneManager.LoadScene("HighScores");
+    }
 }
