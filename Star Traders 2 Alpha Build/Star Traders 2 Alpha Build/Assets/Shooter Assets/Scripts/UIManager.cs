@@ -44,7 +44,10 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(gameOverScreen.activeInHierarchy)
+        {
+            StartCoroutine(GameOverCo());
+        }
     }
 
     public void Restart()
@@ -60,4 +63,12 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene("Title Screen", LoadSceneMode.Single);
 
     }
+    public IEnumerator GameOverCo()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("HighScores", LoadSceneMode.Single);
+
+    }
 }
+
+
