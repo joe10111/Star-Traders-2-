@@ -79,6 +79,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -90,6 +92,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -163,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6af6f44c31020e1469fb843e208a5a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4.25
+  moveSpeed: 2
   startDirection: {x: -0.25, y: -0.15}
   shouldChangeDirection: 1
   changeDirectionXpoint: 0
@@ -172,7 +175,7 @@ MonoBehaviour:
   firePoint: {fileID: 86802979}
   timeBetweenShot: 2
   canShoot: 1
-  currentHealth: 3
+  currentHealth: 2
   DeathEffect: {fileID: 1229876416362346, guid: dbce13e23c60ef44a93b2cf87b964d02,
     type: 3}
   scoreValue: 100

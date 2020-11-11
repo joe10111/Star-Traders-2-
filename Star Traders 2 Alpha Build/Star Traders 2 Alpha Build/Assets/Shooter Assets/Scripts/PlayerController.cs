@@ -46,12 +46,10 @@ public class PlayerController : MonoBehaviour {
         normalSpeed = moveSpeed;
         theRB = GetComponent<Rigidbody2D>();
 	}
-	
+	     
 	// Update is called once per frame
 	void Update ()
     {
-      
-
         if (!stopMovement)
         {
             float Movex = Input.GetAxis("Horizontal");
@@ -103,8 +101,6 @@ public class PlayerController : MonoBehaviour {
                     DestroyImmediate(eShot, true);
                      }
                 }
-            
-
             if (boostCounter > 0)
             {
                 boostCounter -= Time.deltaTime;
